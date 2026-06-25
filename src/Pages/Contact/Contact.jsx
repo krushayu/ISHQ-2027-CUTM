@@ -6,6 +6,7 @@ import {
   FaEnvelope,
   FaUserTie,
   FaPaperPlane,
+  FaQuestionCircle,
 } from "react-icons/fa";
 import { MdLocationOn } from "react-icons/md";
 
@@ -128,6 +129,12 @@ const Contact = () => {
           <div className="ishq-contact-map-address">
             <FaMapMarkerAlt className="ishq-contact-map-address-icon" />
             <span>ISHQ-Contact: Centurion University, Vizianagaram Campus, Andhra Pradesh</span>
+            <span>If any website related issue? <a href="https://krushayu.in/contact">Click Here</a></span>
+          </div>
+          <br></br>
+          <div className="ishq-contact-map-address">
+            <FaQuestionCircle className="ishq-contact-map-address-icon" />
+            <span>If any website related issue? <a href="https://krushayu.in/contact" target="_blank">Click Here</a></span>
           </div>
         </div>
       </div>
