@@ -1,0 +1,644 @@
+.paper-wrapper {
+  min-height: 100vh;
+  background: #F5F0E8;
+  padding-top: 80px;
+}
+
+/* Hero */
+.paper-hero {
+  background: linear-gradient(135deg, #0B1E38 0%, #1A3B5C 100%);
+  padding: 36px 20px;
+  text-align: center;
+  color: #F5F0E8;
+  border-bottom: 3px solid #476E9E;
+  position: relative;
+  overflow: hidden;
+}
+
+.paper-hero::before {
+  content: 'ISHQ - 2027';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  font-weight: 800;
+  color: rgba(245, 240, 232, 0.07);
+  letter-spacing: 10px;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+.paper-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.paper-hero-title {
+  font-size: 36px;
+  font-weight: 800;
+  margin: 0 0 6px 0;
+  font-family: 'Roboto Slab', serif;
+  color: #F5F0E8;
+}
+
+.paper-hero-subtitle {
+  font-size: 15px;
+  color: #D5D0C8;
+  font-weight: 400;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* Container */
+.paper-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* Section */
+.paper-section {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(11, 30, 56, 0.1);
+  border-left: 5px solid #476E9E;
+}
+
+.paper-section-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0B1E38;
+  margin: 0 0 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.paper-icon {
+  color: #476E9E;
+  font-size: 28px;
+}
+
+.paper-intro {
+  font-size: 17px;
+  font-weight: 600;
+  color: #0B1E38;
+  margin: 0 0 12px 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+.paper-text {
+  font-size: 16px;
+  color: #1A3B5C;
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* Cards */
+.paper-card {
+  background: white;
+  border-radius: 20px;
+  padding: 35px 40px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 30px rgba(11, 30, 56, 0.1);
+  border: 1px solid #D5D0C8;
+}
+
+.paper-card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0B1E38;
+  margin: 0 0 15px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.paper-card p {
+  font-size: 15px;
+  color: #1A3B5C;
+  line-height: 1.8;
+  margin: 0 0 12px 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+.paper-card p:last-child {
+  margin-bottom: 0;
+}
+
+.paper-card strong {
+  color: #0B1E38;
+}
+
+.paper-small-icon {
+  color: #476E9E;
+  font-size: 18px;
+}
+
+/* Template Links */
+.paper-template-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 15px 0 20px 0;
+}
+
+.paper-template-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  background: #0B1E38;
+  color: #F5F0E8;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: 'Roboto Slab', serif;
+}
+
+.paper-template-btn:hover {
+  background: #476E9E;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(71, 110, 158, 0.3);
+  color: #F5F0E8;
+}
+
+/* Note */
+.paper-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #F5F0E8;
+  padding: 16px 20px;
+  border-radius: 12px;
+  border-left: 4px solid #A93122;
+}
+
+.note-icon {
+  color: #A93122;
+  font-size: 18px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.paper-note p {
+  margin: 0;
+  font-size: 14px;
+  color: #1A3B5C;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* Instructions */
+.paper-instructions {
+  margin: 15px 0 25px 0;
+}
+
+.paper-instructions h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0B1E38;
+  margin: 0 0 12px 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+.paper-instructions ol {
+  padding-left: 24px;
+  margin: 0;
+}
+
+.paper-instructions ol li {
+  font-size: 15px;
+  color: #1A3B5C;
+  line-height: 1.8;
+  margin-bottom: 6px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.paper-instructions ol li:last-child {
+  margin-bottom: 0;
+}
+
+/* ===== CMT CARD - IMPROVED DESIGN ===== */
+.cmt-card {
+  background: cadetblue;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin-top: 20px;
+  border: 1px solid rgba(71, 110, 158, 0.3);
+  box-shadow: 0 8px 30px rgba(11, 30, 56, 0.2);
+}
+
+.cmt-card-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.cmt-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(71, 110, 158, 0.2);
+  color: #F5F0E8;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Roboto Slab', serif;
+  width: fit-content;
+  border: 1px solid rgba(71, 110, 158, 0.3);
+  letter-spacing: 0.5px;
+}
+
+.cmt-badge-dot {
+  width: 10px;
+  height: 10px;
+  background: #22c55e;
+  border-radius: 50%;
+  animation: pulse-dot 1.5s infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.8); }
+}
+
+.cmt-card-heading {
+  font-size: 30px;
+  font-weight: 800;
+  color: #F5F0E8;
+  margin: 18px 0 14px 0;
+  line-height: 1.2;
+  font-family: 'Roboto Slab', serif;
+}
+
+.cmt-card-sub {
+  font-size: 16px;
+  color: #D5D0C8;
+  line-height: 1.7;
+  margin: 0 0 28px 0;
+  font-family: 'Roboto Slab', serif;
+  max-width: 90%;
+}
+
+.cmt-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px 40px;
+  border: none;
+  border-radius: 14px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #0B1E38;
+  background: #F5F0E8;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Roboto Slab', serif;
+  width: fit-content;
+  min-width: 240px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cmt-btn:hover:not(:disabled) {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(245, 240, 232, 0.3);
+}
+
+.cmt-btn:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.cmt-btn-icon {
+  font-size: 18px;
+}
+
+/* Button states */
+.cmt-btn--idle {
+  background: #F5F0E8;
+  color: #0B1E38;
+}
+
+.cmt-btn--idle:hover:not(:disabled) {
+  background: #FFFFFF;
+}
+
+.cmt-btn--loading {
+  background: #476E9E;
+  color: #F5F0E8;
+}
+
+.cmt-btn--loading:hover:not(:disabled) {
+  background: #5A7FB0;
+}
+
+.cmt-btn--success {
+  background: #22c55e;
+  color: #F5F0E8;
+}
+
+.cmt-btn--success:hover:not(:disabled) {
+  background: #16a34a;
+}
+
+.cmt-ring {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(245, 240, 232, 0.3);
+  border-top-color: #F5F0E8;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.cmt-card-help {
+  font-size: 14px;
+  color: #D5D0C8;
+  margin: 18px 0 0 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+.cmt-card-help a {
+  color: #e2e5ea;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.cmt-card-help a:hover {
+  color: #A93122;
+  text-decoration: underline;
+}
+
+/* Right Side - QR */
+.cmt-card-qr {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+}
+
+.cmt-qr-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(245, 240, 232, 0.05);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid rgba(71, 110, 158, 0.2);
+  width: 100%;
+  max-width: 200px;
+}
+
+.cmt-qr-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #D5D0C8;
+  margin: 0 0 14px 0;
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.cmt-qr-frame {
+  background: white;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cmt-qr-img {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  display: block;
+}
+
+.cmt-qr-sub {
+  font-size: 12px;
+  color: #D5D0C8;
+  margin: 12px 0 0 0;
+  font-family: 'Roboto Slab', serif;
+  opacity: 0.8;
+}
+
+/* CMT Acknowledgment - Plain <p> style */
+.paper-container > p {
+  font-size: 15px;
+  color: #1A3B5C;
+  line-height: 1.8;
+  font-family: 'Roboto Slab', serif;
+  margin: 0 0 10px 0;
+}
+
+/* Policy & Plagiarism Cards */
+.policy-card {
+  border-left: 5px solid #476E9E;
+}
+
+.plagiarism-card {
+  border-left: 5px solid #A93122;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .cmt-card {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 30px;
+  }
+
+  .cmt-card-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .cmt-badge {
+    align-self: center;
+  }
+
+  .cmt-card-sub {
+    max-width: 100%;
+  }
+
+  .cmt-btn {
+    align-self: center;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .cmt-card-qr {
+    margin-top: 10px;
+  }
+
+  .cmt-qr-wrapper {
+    max-width: 220px;
+  }
+
+  .cmt-qr-img {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .paper-wrapper {
+    padding-top: 100px;
+  }
+
+  .paper-hero {
+    padding: 28px 15px;
+  }
+
+  .paper-hero-title {
+    font-size: 26px;
+  }
+
+  .paper-hero-subtitle {
+    font-size: 13px;
+  }
+
+  .paper-container {
+    padding: 40px 16px;
+  }
+
+  .paper-section {
+    padding: 25px 20px;
+  }
+
+  .paper-section-title {
+    font-size: 22px;
+  }
+
+  .paper-card {
+    padding: 25px 20px;
+  }
+
+  .paper-card-title {
+    font-size: 18px;
+  }
+
+  .paper-template-links {
+    flex-direction: column;
+  }
+
+  .paper-template-btn {
+    justify-content: center;
+  }
+
+  .cmt-card {
+    padding: 25px 20px;
+  }
+
+  .cmt-card-heading {
+    font-size: 24px;
+  }
+
+  .cmt-btn {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 15px;
+    min-width: unset;
+    max-width: 100%;
+  }
+
+  .cmt-qr-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .cmt-qr-wrapper {
+    max-width: 180px;
+    padding: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .paper-hero::before {
+    font-size: 60px;
+    letter-spacing: 5px;
+  }
+
+  .paper-hero-title {
+    font-size: 22px;
+  }
+
+  .paper-section-title {
+    font-size: 19px;
+  }
+
+  .paper-intro {
+    font-size: 15px;
+  }
+
+  .paper-text {
+    font-size: 14px;
+  }
+
+  .paper-card p {
+    font-size: 14px;
+  }
+
+  .paper-instructions ol li {
+    font-size: 14px;
+  }
+
+  .cmt-card-heading {
+    font-size: 20px;
+  }
+
+  .cmt-card-sub {
+    font-size: 14px;
+  }
+
+  .cmt-btn {
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+
+  .cmt-qr-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .cmt-qr-wrapper {
+    max-width: 150px;
+    padding: 14px;
+  }
+
+  .cmt-qr-label {
+    font-size: 12px;
+  }
+
+  .paper-container > p {
+    font-size: 14px;
+  }
+}
+
+
+.submit p {
+  font-size: 15px;
+  color: #f9f6f6;
+  line-height: 1.8;
+  margin: 0 0 12px 0;
+  font-family: 'Roboto Slab', serif;
+}

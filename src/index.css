@@ -1,0 +1,203 @@
+/* ==================== GOOGLE FONT IMPORTS ==================== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+/* ==================== CSS VARIABLES ==================== */
+:root {
+  /* Primary Colors */
+  --luster-white: #F5F0E8;
+  --aster-flower-blue: #476E9E;
+  --habanero: #A93122;
+  --jodhpur-tan: #D5D0C8;
+  --deep-space-royal: #0B1E38;
+  --deadly-depths: #1A3B5C;
+  
+  /* UI Colors */
+  --primary-bg: var(--luster-white);
+  --primary-text: var(--deep-space-royal);
+  --secondary-text: var(--deadly-depths);
+  --accent-color: var(--aster-flower-blue);
+  --accent-hover: var(--habanero);
+  --border-color: var(--jodhpur-tan);
+  --nav-bg: var(--deep-space-royal);
+  --nav-text: var(--luster-white);
+  
+  /* Font */
+  --font-primary: 'Roboto Slab', serif;
+  --font-secondary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-primary), var(--font-secondary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
+  background-color: #F5F0E8; /* Luster White - Background */
+  color: #0B1E38; /* Deep Space Royal - Primary text */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* ==================== GLOBAL ELEMENT STYLES ==================== */
+
+/* Headings - Make them bold and elegant with Roboto Slab */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--deep-space-royal);
+  margin-top: 0;
+  font-family: var(--font-primary);
+  font-weight: 700;
+}
+
+/* Paragraphs and body text */
+p, span, div, li, a, button, input, textarea, select {
+  font-family: var(--font-primary);
+}
+
+/* Links */
+a {
+  color: var(--aster-flower-blue);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--habanero);
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  font-family: var(--font-primary);
+}
+
+/* Inputs, Textareas, Selects */
+input, textarea, select {
+  background-color: #FFFFFF;
+  border: 1px solid var(--jodhpur-tan);
+  color: var(--deep-space-royal);
+  transition: border-color 0.3s ease;
+  font-family: var(--font-primary);
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--aster-flower-blue);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(71, 110, 158, 0.2);
+}
+
+/* Selection color */
+::selection {
+  background-color: var(--aster-flower-blue);
+  color: var(--luster-white);
+}
+
+::-moz-selection {
+  background-color: var(--aster-flower-blue);
+  color: var(--luster-white);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--luster-white);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--aster-flower-blue);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--deadly-depths);
+}
+
+/* ==================== RESPONSIVE ==================== */
+
+/* Mobile viewport fix */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+/* ==================== UTILITY CLASSES ==================== */
+
+/* Text Colors */
+.text-luster-white { color: #F5F0E8; }
+.text-aster-flower-blue { color: #476E9E; }
+.text-habanero { color: #A93122; }
+.text-jodhpur-tan { color: #D5D0C8; }
+.text-deep-space-royal { color: #0B1E38; }
+.text-deadly-depths { color: #1A3B5C; }
+
+/* Background Colors */
+.bg-luster-white { background-color: #F5F0E8; }
+.bg-aster-flower-blue { background-color: #476E9E; }
+.bg-habanero { background-color: #A93122; }
+.bg-jodhpur-tan { background-color: #D5D0C8; }
+.bg-deep-space-royal { background-color: #0B1E38; }
+.bg-deadly-depths { background-color: #1A3B5C; }
+
+/* Border Colors */
+.border-aster-flower-blue { border-color: #476E9E; }
+.border-habanero { border-color: #A93122; }
+.border-jodhpur-tan { border-color: #D5D0C8; }
+.border-deep-space-royal { border-color: #0B1E38; }
+
+/* Hover Effects */
+.hover-aster-flower-blue:hover { color: #476E9E; }
+.hover-habanero:hover { color: #A93122; }
+.hover-bg-aster-flower-blue:hover { background-color: #476E9E; }
+.hover-bg-habanero:hover { background-color: #A93122; }
+
+/* Gradient Backgrounds */
+.gradient-primary {
+  background: linear-gradient(135deg, #0B1E38 0%, #1A3B5C 100%);
+}
+
+.gradient-light {
+  background: linear-gradient(135deg, #F5F0E8 0%, #FFFFFF 100%);
+}
+
+.gradient-accent {
+  background: linear-gradient(135deg, #476E9E 0%, #1A3B5C 100%);
+}
+
+.gradient-warm {
+  background: linear-gradient(135deg, #A93122 0%, #C24B3A 100%);
+}
+
+/* Font Utility Classes */
+.font-roboto-slab {
+  font-family: 'Roboto Slab', serif !important;
+}
+
+.font-weight-light { font-weight: 300; }
+.font-weight-regular { font-weight: 400; }
+.font-weight-medium { font-weight: 500; }
+.font-weight-semibold { font-weight: 600; }
+.font-weight-bold { font-weight: 700; }
+.font-weight-extrabold { font-weight: 800; }
+.font-weight-black { font-weight: 900; }
