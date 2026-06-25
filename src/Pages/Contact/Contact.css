@@ -1,12 +1,12 @@
-/* ===== CONTACT WRAPPER ===== */
-.contact-wrapper {
+/* ===== ISHQ-Contact WRAPPER ===== */
+.ishq-contact-wrapper {
   min-height: 100vh;
   background: #F5F0E8;
   padding-top: 80px;
 }
 
-/* ===== HERO SECTION ===== */
-.contact-hero {
+/* ===== ISHQ-Contact HERO SECTION ===== */
+.ishq-contact-hero {
   background: linear-gradient(135deg, #0B1E38 0%, #1A3B5C 100%);
   padding: 40px 20px;
   text-align: center;
@@ -16,8 +16,8 @@
   overflow: hidden;
 }
 
-.contact-hero::before {
-  content: 'ISHQ - 2027';
+.ishq-contact-hero::before {
+  content: 'ISHQ-Contact';
   position: absolute;
   top: 50%;
   left: 50%;
@@ -32,12 +32,12 @@
   z-index: 0;
 }
 
-.contact-hero > * {
+.ishq-contact-hero > * {
   position: relative;
   z-index: 1;
 }
 
-.contact-hero-title {
+.ishq-contact-hero-title {
   font-size: 36px;
   font-weight: 800;
   margin: 0 0 6px 0;
@@ -45,15 +45,15 @@
   color: #F5F0E8;
 }
 
-.contact-hero-subtitle {
+.ishq-contact-hero-subtitle {
   font-size: 15px;
   color: #D5D0C8;
   font-weight: 400;
   font-family: 'Roboto Slab', serif;
 }
 
-/* Hero Shapes */
-.hero-shapes {
+/* ISHQ-Contact Hero Shapes */
+.ishq-contact-hero-shapes {
   position: absolute;
   top: 0;
   left: 0;
@@ -64,44 +64,44 @@
   pointer-events: none;
 }
 
-.shape {
+.ishq-contact-shape {
   position: absolute;
   border-radius: 50%;
   opacity: 0.05;
 }
 
-.shape-1 {
+.ishq-contact-shape-1 {
   width: 250px;
   height: 250px;
   background: #476E9E;
   top: -80px;
   right: -80px;
-  animation: floatShape 8s ease-in-out infinite;
+  animation: ishqContactFloat 8s ease-in-out infinite;
 }
 
-.shape-2 {
+.ishq-contact-shape-2 {
   width: 200px;
   height: 200px;
   background: #A93122;
   bottom: -60px;
   left: -60px;
-  animation: floatShape 10s ease-in-out infinite reverse;
+  animation: ishqContactFloat 10s ease-in-out infinite reverse;
 }
 
-@keyframes floatShape {
+@keyframes ishqContactFloat {
   0%, 100% { transform: translate(0, 0) scale(1); }
   50% { transform: translate(20px, -20px) scale(1.1); }
 }
 
-/* ===== CONTAINER ===== */
-.contact-container {
+/* ===== ISHQ-Contact CONTAINER ===== */
+.ishq-contact-container {
   max-width: 1100px;
   margin: 0 auto;
   padding: 50px 20px 60px;
 }
 
-/* ===== MAIN CONTACT CARD ===== */
-.contact-main-card {
+/* ===== ISHQ-Contact MAIN CARD ===== */
+.ishq-contact-main-card {
   background: white;
   border-radius: 20px;
   padding: 40px;
@@ -110,19 +110,19 @@
   margin-bottom: 40px;
 }
 
-.contact-card-grid {
+.ishq-contact-card-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
 
-/* Contact Section */
-.contact-section {
+/* ISHQ-Contact Section */
+.ishq-contact-section {
   text-align: center;
   padding: 10px 0;
 }
 
-.section-icon {
+.ishq-contact-section-icon {
   width: 56px;
   height: 56px;
   margin: 0 auto 14px;
@@ -134,31 +134,31 @@
   transition: all 0.3s ease;
 }
 
-.address-section .section-icon {
+.ishq-contact-address .ishq-contact-section-icon {
   background: rgba(71, 110, 158, 0.12);
   color: #476E9E;
 }
 
-.phone-section .section-icon {
+.ishq-contact-phone .ishq-contact-section-icon {
   background: rgba(169, 49, 34, 0.12);
   color: #A93122;
 }
 
-.email-section .section-icon {
+.ishq-contact-email .ishq-contact-section-icon {
   background: rgba(26, 59, 92, 0.12);
   color: #1A3B5C;
 }
 
-.chair-section .section-icon {
+.ishq-contact-chair .ishq-contact-section-icon {
   background: rgba(71, 110, 158, 0.12);
   color: #476E9E;
 }
 
-.contact-section:hover .section-icon {
+.ishq-contact-section:hover .ishq-contact-section-icon {
   transform: scale(1.1) rotate(-5deg);
 }
 
-.contact-section h3 {
+.ishq-contact-section h3 {
   font-size: 17px;
   font-weight: 700;
   color: #0B1E38;
@@ -166,7 +166,7 @@
   font-family: 'Roboto Slab', serif;
 }
 
-.contact-section .section-content p {
+.ishq-contact-section .ishq-contact-content p {
   font-size: 14px;
   color: #1A3B5C;
   line-height: 1.7;
@@ -174,21 +174,21 @@
   font-family: 'Roboto Slab', serif;
 }
 
-.contact-section .highlight {
+.ishq-contact-section .ishq-contact-highlight {
   color: #476E9E;
   font-weight: 600;
 }
 
-/* Phone Items */
-.phone-item {
+/* ISHQ-Contact Phone Items */
+.ishq-contact-phone-item {
   margin-bottom: 6px;
 }
 
-.phone-item:last-child {
+.ishq-contact-phone-item:last-child {
   margin-bottom: 0;
 }
 
-.phone-label {
+.ishq-contact-phone-label {
   font-size: 12px;
   font-weight: 600;
   color: #1A3B5C;
@@ -196,7 +196,7 @@
   display: block;
 }
 
-.phone-link {
+.ishq-contact-phone-link {
   font-size: 15px;
   font-weight: 600;
   color: #A93122;
@@ -205,12 +205,12 @@
   transition: color 0.3s ease;
 }
 
-.phone-link:hover {
+.ishq-contact-phone-link:hover {
   color: #0B1E38;
 }
 
-/* Email */
-.email-link {
+/* ISHQ-Contact Email */
+.ishq-contact-email-link {
   font-size: 15px;
   font-weight: 600;
   color: #476E9E;
@@ -219,12 +219,12 @@
   transition: color 0.3s ease;
 }
 
-.email-link:hover {
+.ishq-contact-email-link:hover {
   color: #A93122;
   text-decoration: underline;
 }
 
-.email-note {
+.ishq-contact-email-note {
   font-size: 12px;
   color: #1A3B5C;
   opacity: 0.7;
@@ -232,8 +232,8 @@
   margin: 4px 0 0 0;
 }
 
-/* Chair Section */
-.chair-name {
+/* ISHQ-Contact Chair Section */
+.ishq-contact-chair-name {
   font-size: 20px !important;
   font-weight: 700 !important;
   color: #0B1E38 !important;
@@ -241,14 +241,14 @@
   margin-bottom: 2px !important;
 }
 
-.chair-title {
+.ishq-contact-chair-title {
   font-size: 13px !important;
   color: #476E9E !important;
   font-weight: 500 !important;
   margin-bottom: 8px !important;
 }
 
-.chair-badge {
+.ishq-contact-chair-badge {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -261,12 +261,12 @@
   font-family: 'Roboto Slab', serif;
 }
 
-.badge-icon {
+.ishq-contact-badge-icon {
   font-size: 11px;
 }
 
-/* ===== MAP SECTION ===== */
-.contact-map-section {
+/* ===== ISHQ-Contact MAP SECTION ===== */
+.ishq-contact-map-section {
   background: white;
   border-radius: 20px;
   padding: 30px 32px 25px;
@@ -275,7 +275,7 @@
   margin-bottom: 40px;
 }
 
-.contact-map-section h2 {
+.ishq-contact-map-section h2 {
   font-size: 22px;
   font-weight: 700;
   color: #0B1E38;
@@ -286,12 +286,12 @@
   font-family: 'Roboto Slab', serif;
 }
 
-.map-icon {
+.ishq-contact-map-icon {
   color: #A93122;
   font-size: 24px;
 }
 
-.map-wrapper {
+.ishq-contact-map-wrapper {
   width: 100%;
   height: 380px;
   border-radius: 14px;
@@ -300,7 +300,7 @@
   margin-bottom: 14px;
 }
 
-.contact-map {
+.ishq-contact-map {
   width: 100%;
   height: 100%;
   border: 0;
@@ -308,11 +308,11 @@
   transition: filter 0.5s ease;
 }
 
-.map-wrapper:hover .contact-map {
+.ishq-contact-map-wrapper:hover .ishq-contact-map {
   filter: grayscale(0) brightness(1);
 }
 
-.map-address {
+.ishq-contact-map-address {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -324,247 +324,168 @@
   border-radius: 10px;
 }
 
-.map-address-icon {
+.ishq-contact-map-address-icon {
   color: #A93122;
   font-size: 18px;
   flex-shrink: 0;
 }
 
-/* ===== SOCIAL SECTION ===== */
-.contact-social-section {
-  background: white;
-  border-radius: 20px;
-  padding: 30px;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(11, 30, 56, 0.08);
-  border: 1px solid #D5D0C8;
-}
-
-.contact-social-section h2 {
-  font-size: 22px;
-  font-weight: 700;
-  color: #0B1E38;
-  margin: 0 0 20px 0;
-  font-family: 'Roboto Slab', serif;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.social-link {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  color: white;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.social-link:hover {
-  transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-}
-
-.social-link.linkedin { background: #0077B5; }
-.social-link.twitter { background: #1DA1F2; }
-.social-link.youtube { background: #FF0000; }
-.social-link.instagram { background: #E1306C; }
-.social-link.website { background: #0B1E38; }
-.social-link.website:hover { background: #476E9E; }
-
-/* ===== RESPONSIVE ===== */
+/* ===== ISHQ-Contact RESPONSIVE ===== */
 @media (max-width: 992px) {
-  .contact-card-grid {
+  .ishq-contact-card-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
   }
 }
 
 @media (max-width: 768px) {
-  .contact-wrapper {
+  .ishq-contact-wrapper {
     padding-top: 100px;
   }
 
-  .contact-hero-title {
+  .ishq-contact-hero-title {
     font-size: 28px;
   }
 
-  .contact-hero-subtitle {
+  .ishq-contact-hero-subtitle {
     font-size: 14px;
   }
 
-  .contact-container {
+  .ishq-contact-hero::before {
+    font-size: 60px;
+    letter-spacing: 5px;
+  }
+
+  .ishq-contact-container {
     padding: 30px 16px 40px;
   }
 
-  .contact-main-card {
+  .ishq-contact-main-card {
     padding: 24px 20px;
   }
 
-  .contact-card-grid {
+  .ishq-contact-card-grid {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
 
-  .contact-section {
+  .ishq-contact-section {
     padding: 5px 0;
   }
 
-  .section-icon {
+  .ishq-contact-section-icon {
     width: 48px;
     height: 48px;
     font-size: 18px;
   }
 
-  .contact-section h3 {
+  .ishq-contact-section h3 {
     font-size: 15px;
   }
 
-  .contact-map-section {
+  .ishq-contact-map-section {
     padding: 20px 18px 18px;
   }
 
-  .contact-map-section h2 {
+  .ishq-contact-map-section h2 {
     font-size: 19px;
   }
 
-  .map-wrapper {
+  .ishq-contact-map-wrapper {
     height: 280px;
   }
 
-  .map-address {
+  .ishq-contact-map-address {
     font-size: 13px;
-  }
-
-  .contact-social-section {
-    padding: 24px 18px;
-  }
-
-  .contact-social-section h2 {
-    font-size: 19px;
-  }
-
-  .social-link {
-    width: 44px;
-    height: 44px;
-    font-size: 19px;
   }
 }
 
 @media (max-width: 576px) {
-  .contact-hero::before {
-    font-size: 60px;
-    letter-spacing: 5px;
-  }
-
-  .contact-hero-title {
+  .ishq-contact-hero-title {
     font-size: 24px;
   }
 
-  .contact-main-card {
+  .ishq-contact-hero-subtitle {
+    font-size: 13px;
+  }
+
+  .ishq-contact-main-card {
     padding: 18px 14px;
   }
 
-  .contact-card-grid {
+  .ishq-contact-card-grid {
     grid-template-columns: 1fr;
     gap: 16px;
   }
 
-  .contact-section {
+  .ishq-contact-section {
     padding: 8px 0;
     border-bottom: 1px solid #F5F0E8;
   }
 
-  .contact-section:last-child {
+  .ishq-contact-section:last-child {
     border-bottom: none;
   }
 
-  .section-icon {
+  .ishq-contact-section-icon {
     width: 42px;
     height: 42px;
     font-size: 16px;
   }
 
-  .contact-section h3 {
+  .ishq-contact-section h3 {
     font-size: 14px;
   }
 
-  .contact-section .section-content p {
+  .ishq-contact-section .ishq-contact-content p {
     font-size: 13px;
   }
 
-  .chair-name {
+  .ishq-contact-chair-name {
     font-size: 17px !important;
   }
 
-  .phone-link {
+  .ishq-contact-phone-link {
     font-size: 14px;
   }
 
-  .email-link {
+  .ishq-contact-email-link {
     font-size: 14px;
   }
 
-  .contact-map-section {
+  .ishq-contact-map-section {
     padding: 16px 14px 14px;
   }
 
-  .contact-map-section h2 {
+  .ishq-contact-map-section h2 {
     font-size: 17px;
   }
 
-  .map-wrapper {
+  .ishq-contact-map-wrapper {
     height: 220px;
   }
 
-  .map-address {
+  .ishq-contact-map-address {
     font-size: 12px;
     flex-wrap: wrap;
-  }
-
-  .contact-social-section {
-    padding: 18px 14px;
-  }
-
-  .contact-social-section h2 {
-    font-size: 17px;
-  }
-
-  .social-links {
-    gap: 10px;
-  }
-
-  .social-link {
-    width: 40px;
-    height: 40px;
-    font-size: 17px;
   }
 }
 
 @media (max-width: 400px) {
-  .contact-hero-title {
+  .ishq-contact-hero-title {
     font-size: 20px;
   }
 
-  .contact-hero-subtitle {
+  .ishq-contact-hero-subtitle {
     font-size: 12px;
   }
 
-  .map-wrapper {
-    height: 180px;
+  .ishq-contact-hero::before {
+    font-size: 40px;
+    letter-spacing: 3px;
   }
 
-  .social-link {
-    width: 36px;
-    height: 36px;
-    font-size: 15px;
+  .ishq-contact-map-wrapper {
+    height: 180px;
   }
 }
