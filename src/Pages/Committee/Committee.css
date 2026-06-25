@@ -1,0 +1,460 @@
+/* ===== ISHQ-Committee WRAPPER ===== */
+.ishq-committee-wrapper {
+  min-height: 100vh;
+  background: #F5F0E8;
+  padding-top: 80px;
+}
+
+/* ===== ISHQ-Committee HERO SECTION ===== */
+.ishq-committee-hero {
+  background: linear-gradient(135deg, #0B1E38 0%, #1A3B5C 100%);
+  padding: 40px 20px;
+  text-align: center;
+  color: #F5F0E8;
+  border-bottom: 3px solid #476E9E;
+  position: relative;
+  overflow: hidden;
+}
+
+.ishq-committee-hero::before {
+  content: 'ISHQ-Committee';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  font-weight: 800;
+  color: rgba(245, 240, 232, 0.06);
+  letter-spacing: 8px;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+.ishq-committee-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.ishq-committee-hero-title {
+  font-size: 36px;
+  font-weight: 800;
+  margin: 0 0 6px 0;
+  font-family: 'Roboto Slab', serif;
+  color: #F5F0E8;
+}
+
+.ishq-committee-hero-subtitle {
+  font-size: 15px;
+  color: #D5D0C8;
+  font-weight: 400;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* ISHQ-Committee Hero Shapes */
+.ishq-committee-hero-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.ishq-committee-shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.05;
+}
+
+.ishq-committee-shape-1 {
+  width: 250px;
+  height: 250px;
+  background: #476E9E;
+  top: -80px;
+  right: -80px;
+  animation: ishqCommitteeFloat 8s ease-in-out infinite;
+}
+
+.ishq-committee-shape-2 {
+  width: 200px;
+  height: 200px;
+  background: #A93122;
+  bottom: -60px;
+  left: -60px;
+  animation: ishqCommitteeFloat 10s ease-in-out infinite reverse;
+}
+
+@keyframes ishqCommitteeFloat {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(20px, -20px) scale(1.1); }
+}
+
+/* ===== ISHQ-Committee CONTAINER ===== */
+.ishq-committee-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 20px 60px;
+}
+
+/* ===== ISHQ-Committee COMING SOON CARD ===== */
+.ishq-committee-coming-soon {
+  background: white;
+  border-radius: 20px;
+  padding: 50px 40px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(11, 30, 56, 0.08);
+  border: 1px solid #D5D0C8;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ishq-committee-coming-soon::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(71, 110, 158, 0.03) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.ishq-committee-coming-soon-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background: rgba(71, 110, 158, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  color: #476E9E;
+  transition: all 0.3s ease;
+}
+
+.ishq-committee-coming-soon:hover .ishq-committee-coming-soon-icon {
+  transform: scale(1.1) rotate(-5deg);
+  background: rgba(71, 110, 158, 0.2);
+}
+
+.ishq-committee-coming-soon h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0B1E38;
+  margin: 0 0 12px 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+.ishq-committee-coming-soon p {
+  font-size: 16px;
+  color: #1A3B5C;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* ISHQ-Committee Features */
+.ishq-committee-coming-soon-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.ishq-committee-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background: #F5F0E8;
+  border-radius: 12px;
+  font-size: 14px;
+  color: #1A3B5C;
+  font-family: 'Roboto Slab', serif;
+  transition: all 0.3s ease;
+}
+
+.ishq-committee-feature-item:hover {
+  background: #E8E0D5;
+  transform: translateY(-2px);
+}
+
+.feature-icon {
+  color: #476E9E;
+  font-size: 18px;
+}
+
+/* ===== ISHQ-Committee INFO GRID ===== */
+.ishq-committee-info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.ishq-committee-info-card {
+  background: white;
+  border-radius: 16px;
+  padding: 28px 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(11, 30, 56, 0.06);
+  border: 1px solid #D5D0C8;
+  transition: all 0.3s ease;
+}
+
+.ishq-committee-info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(11, 30, 56, 0.12);
+  border-color: #476E9E;
+}
+
+.ishq-committee-info-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 12px;
+  background: rgba(71, 110, 158, 0.08);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #476E9E;
+  transition: all 0.3s ease;
+}
+
+.ishq-committee-info-card:hover .ishq-committee-info-icon {
+  background: rgba(71, 110, 158, 0.15);
+  transform: scale(1.05);
+}
+
+.ishq-committee-info-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0B1E38;
+  margin: 0 0 6px 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+.ishq-committee-info-card p {
+  font-size: 14px;
+  color: #1A3B5C;
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* ===== ISHQ-Committee NOTE ===== */
+.ishq-committee-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: white;
+  padding: 20px 28px;
+  border-radius: 14px;
+  border-left: 5px solid #A93122;
+  box-shadow: 0 4px 20px rgba(11, 30, 56, 0.06);
+}
+
+.ishq-committee-note-icon {
+  color: #A93122;
+  font-size: 20px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.ishq-committee-note p {
+  font-size: 15px;
+  color: #1A3B5C;
+  line-height: 1.8;
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+.ishq-committee-note strong {
+  color: #0B1E38;
+}
+
+/* ===== ISHQ-Committee RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .ishq-committee-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .ishq-committee-coming-soon-features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ishq-committee-wrapper {
+    padding-top: 100px;
+  }
+
+  .ishq-committee-hero-title {
+    font-size: 28px;
+  }
+
+  .ishq-committee-hero-subtitle {
+    font-size: 14px;
+  }
+
+  .ishq-committee-hero::before {
+    font-size: 50px;
+    letter-spacing: 5px;
+  }
+
+  .ishq-committee-container {
+    padding: 30px 16px 40px;
+  }
+
+  .ishq-committee-coming-soon {
+    padding: 35px 24px;
+  }
+
+  .ishq-committee-coming-soon h2 {
+    font-size: 24px;
+  }
+
+  .ishq-committee-coming-soon p {
+    font-size: 15px;
+  }
+
+  .ishq-committee-coming-soon-icon {
+    width: 64px;
+    height: 64px;
+    font-size: 28px;
+  }
+
+  .ishq-committee-feature-item {
+    font-size: 13px;
+    padding: 10px 14px;
+  }
+
+  .ishq-committee-info-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .ishq-committee-info-card {
+    padding: 22px 16px;
+  }
+
+  .ishq-committee-info-card h3 {
+    font-size: 15px;
+  }
+
+  .ishq-committee-note {
+    padding: 18px 20px;
+  }
+
+  .ishq-committee-note p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .ishq-committee-hero-title {
+    font-size: 24px;
+  }
+
+  .ishq-committee-hero-subtitle {
+    font-size: 13px;
+  }
+
+  .ishq-committee-hero::before {
+    font-size: 35px;
+    letter-spacing: 3px;
+  }
+
+  .ishq-committee-coming-soon {
+    padding: 28px 18px;
+  }
+
+  .ishq-committee-coming-soon h2 {
+    font-size: 20px;
+  }
+
+  .ishq-committee-coming-soon p {
+    font-size: 14px;
+  }
+
+  .ishq-committee-coming-soon-icon {
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+  }
+
+  .ishq-committee-coming-soon-features {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .ishq-committee-feature-item {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .feature-icon {
+    font-size: 15px;
+  }
+
+  .ishq-committee-info-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .ishq-committee-info-card {
+    padding: 18px 14px;
+  }
+
+  .ishq-committee-info-card h3 {
+    font-size: 14px;
+  }
+
+  .ishq-committee-info-card p {
+    font-size: 13px;
+  }
+
+  .ishq-committee-note {
+    padding: 16px 16px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ishq-committee-note p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 400px) {
+  .ishq-committee-hero-title {
+    font-size: 20px;
+  }
+
+  .ishq-committee-hero-subtitle {
+    font-size: 12px;
+  }
+
+  .ishq-committee-hero::before {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+
+  .ishq-committee-coming-soon-features {
+    grid-template-columns: 1fr;
+  }
+
+  .ishq-committee-feature-item {
+    justify-content: center;
+  }
+}

@@ -8,9 +8,9 @@ import Footer from './Components/Footer/Footer';
 import ImpDates from './Pages/ImpDates/ImpDates';
 import Contact from './Pages/Contact/Contact.jsx';
 import Scope from './Pages/Scope/Scope';
-// import Committee from './Pages/Committee';
+import Committee from './Pages/Committee/Committee.jsx';
 import Place from './Pages/Place/Place';
-// import Accommodation from './Pages/Accommodation';
+import Accommodation from './Pages/Accommodation/Accommodation.jsx';
 import PaperSubmission from './Pages/PaperSubmission/PaperSubmission';
 import Sponsors from './Pages/Sponsors/Sponsors';
 import ProgramSchedule from './Pages/Program/ProgramSchedule';
@@ -29,9 +29,9 @@ function App() {
           <Route path="/imp-dates" element={<ImpDates />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/scope" element={<Scope />} />
-          {/* <Route path="/committee" element={<Committee />} /> */}
+          <Route path="/committee" element={<Committee />} />
           <Route path="/places" element={<Place />} />
-          {/* <Route path="/accommodation" element={<Accommodation />} /> */}
+          <Route path="/accommodation" element={<Accommodation />} />
           <Route path="/paper-submission" element={<PaperSubmission />} />
           <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/program-schedule" element={<ProgramSchedule />} />
