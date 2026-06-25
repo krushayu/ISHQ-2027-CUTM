@@ -18,7 +18,7 @@ const PaperSubmission = () => {
     setTimeout(() => {
       setBtnState("success");
       setTimeout(() => {
-        window.open("https://cmt3.research.microsoft.com/ISHQ2027", "_blank");
+        window.open("#", "_blank");
         setBtnState("idle");
       }, 1000);
     }, 2000);
