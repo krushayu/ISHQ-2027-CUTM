@@ -15,9 +15,9 @@ const ImpDates = () => {
     },
     {
       event: 'Last Date for Paper Submission',
-      date: '31 March 2027',
+      date: '30 April 2027',
       desc: 'Final deadline to submit your full paper via Microsoft CMT.',
-      start: new Date('2027-03-31'), end: new Date('2027-03-31'),
+      start: new Date('2027-04-30'), end: new Date('2027-04-30'),
       icon: <FaFileAlt />,
     },
     {
@@ -121,7 +121,7 @@ const ImpDates = () => {
           <h3>⚠️ Note</h3>
           <ul>
             <li>Ensure to submit your papers and register before the deadlines to avoid any inconvenience.</li>
-            <li>For any queries, contact <a href="mailto:ishq2027@cutm.ac.in">ishq2027@cutm.ac.in</a></li>
+            <li>For any queries, contact <a href="mailto:ishq2027@cutmap.ac.in">ishq2027@cutmap.ac.in</a></li>
           </ul>
         </div>
 

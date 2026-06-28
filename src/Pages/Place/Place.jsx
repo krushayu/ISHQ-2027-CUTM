@@ -45,6 +45,42 @@ const placesData = [
     wikipedia: 'https://en.wikipedia.org/wiki/RK_Beach',
     image: '/Palce_Visit/RK_Beach.png',
     location: 'Visakhapatnam, Andhra Pradesh'
+  },
+  {
+    name: 'Palkonda Beach',
+    description: 'A serene and less-crowded beach near Vizianagaram, offering pristine shores, peaceful surroundings, and beautiful sunset views. Perfect for a quiet getaway.',
+    distance: '35 KM',
+    mapLink: '#',
+    wikipedia: '#',
+    image: '/Place_Visit/palkonda_beach.jpg',
+    location: 'Palkonda, Andhra Pradesh'
+  },
+  {
+    name: 'Rishikonda Beach',
+    description: 'A picturesque beach near Visakhapatnam, known for its golden sands, clear waters, and lush green hills surrounding the coastline. Popular for water sports and relaxation.',
+    distance: '55 KM',
+    mapLink: '#',
+    wikipedia: '#',
+    image: '/Place_Visit/rishikonda_beach.jpg',
+    location: 'Visakhapatnam, Andhra Pradesh'
+  },
+  {
+    name: 'Kailashgiri',
+    description: 'A scenic hilltop park in Visakhapatnam offering panoramic views of the city, coastline, and surrounding hills. Features a beautiful Shiva temple, toy train, and lush gardens.',
+    distance: '62 KM',
+    mapLink: '#',
+    wikipedia: '#',
+    image: '/Place_Visit/kailashgiri.jpg',
+    location: 'Visakhapatnam, Andhra Pradesh'
+  },
+  {
+    name: 'Araku Valley (Coffee Gardens)',
+    description: 'A stunning hill station in the Eastern Ghats, famous for its lush coffee plantations, scenic valleys, waterfalls, and tribal culture. A must-visit for nature lovers.',
+    distance: '120 KM',
+    mapLink: '#',
+    wikipedia: '#',
+    image: '/Place_Visit/araku_valley.jpg',
+    location: 'Araku Valley, Andhra Pradesh'
   }
 ];
 

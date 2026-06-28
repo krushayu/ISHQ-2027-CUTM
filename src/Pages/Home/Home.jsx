@@ -139,7 +139,7 @@ const Home = () => {
     { icon: <FaCalendarAlt />, label: "Dates", value: <>10-12 August 2027</>, color: "#FF6B6B", link: "/imp-dates" },
     { icon: <FaMapMarkerAlt />, label: "Venue", value: "Centurion University of Technology and Management, Vizianagaram, AP", color: "#4ECDC4", link: "https://maps.app.goo.gl/cZAhNPGnfPCPvZSVA" },
     { icon: <FaPaperPlane />, label: "Submissions", value: "Open Now", color: "#45B7D1", link: "/paper-submission" },
-    { icon: <FaAward />, label: "Publication", value: "IEEE Xplore", color: "#96CEB4", link: "/publication" },
+    { icon: <FaAward />, label: "Publication", value: "Conference proceedings on IEEE Xplore", color: "#96CEB4", link: "/publication" },
     { icon: <MdAppRegistration />, label: "Mode", value: "Hybrid", color: "#DDA0DD", link: "/program-schedule" },
   ];
 
@@ -153,10 +153,11 @@ const Home = () => {
   const datesRef = useScrollAnim();
 
   const importantDates = [
-    { title: "Paper Submission open",   date: "01 December 2026",         start: new Date('2026-12-01'), end: new Date('2027-03-31') },
-    { title: "Paper Submission close",  date: "31 March 2027",      start: new Date('2027-03-31'), end: new Date('2027-03-31') },
+    { title: "Paper Submission open",   date: "30 December 2026",         start: new Date('2026-12-30'), end: new Date('2027-04-30') },
+    { title: "Last date of Paper Submission ",  date: "30 April 2027",      start: new Date('2027-04-30'), end: new Date('2027-04-30') },
     { title: "Notification of Acceptance", date: "30 May 2027",  start: new Date('2027-05-30'), end: new Date('2027-05-30') },
-    { title: "Start date of registration & camera ready submission", date: "01 June 2027", start: new Date('2027-06-01'), end: new Date('2027-06-30') },
+    { title: "Reg. & Camera ready start", date: "01 June 2027", start: new Date('2027-06-01'), end: new Date('2027-06-30') },
+    { title: "Reg. & Camera ready deadline ",  date: "30 June 2027",      start: new Date('2027-06-30'), end: new Date('2027-06-30') },
     { title: "Conference Dates",        date: "10-12 August 2027", start: new Date('2027-08-10  '), end: new Date('2027-08-12') },
   ].map((d) => {
     const now = new Date();
@@ -302,19 +303,18 @@ const Home = () => {
         <div className="conf-about-body">
           <div className="conf-vm-grid">
             <div className="conf-vm-card conf-vision">
-              <h3>Conference Vision</h3>
+              <h3>Conference Vision</h3>  
               <p>
-                To become a leading international platform that fosters innovation, interdisciplinary research, and collaboration in emerging technologies, driving the development of intelligent, sustainable, and future-ready engineering solutions aligned with global and industrial needs.
-              </p>
+                ISHQ advances integrated research in sustainable engineering, intelligent systems, communication hardware, and quantum technology, connecting academia and industry to develop scalable, energy-efficient, and reliable solutions for measurable real-world impact.              </p>
             </div>
             <div className="conf-vm-card conf-mission">
               <h3>Conference Mission</h3>
               <ul>
-                <li>To provide a global forum for researchers, academicians, and industry professionals to present and exchange cutting-edge research.</li>
-                <li>To promote integration of signal processing, communication, power, quantum technologies, and embedded systems.</li>
-                <li>To address real-world industrial challenges through innovative and scalable solutions.</li>
-                <li>To encourage collaboration between academia and industry for technology transfer and innovation.</li>
-                <li>To support the development of sustainable, intelligent, and human-centric technologies aligned with IEEE's mission of advancing technology for humanity.</li>
+                <li>Advance interdisciplinary research spanning sustainable engineering, intelligent systems, communication hardware, and quantum technology.</li>
+                <li>Build active industry-academia partnerships that convert research outcomes into deployable products and shared infrastructure.</li>
+                <li>Disseminate peer-reviewed results and benchmarks through technical sessions, keynotes, and hands-on workshops.</li>
+                <li>Train students and early-career researchers via mentorship, tutorials, and direct engagement with industry problems.</li>
+                <li>Align conference outcomes with national and global technology missions to deliver measurable scientific and societal impact.</li>
               </ul>
             </div>
           </div>
@@ -588,6 +588,11 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Copyright Stamp */}
+      <div className="copyright-stamp">
+        <img src="/assets/ISHQ_SEAL.png" alt="ISHQ Copyright Seal" />
+      </div>
     </div>
   );
 };

@@ -180,7 +180,7 @@ const PaperSubmission = () => {
                   margin: "0 0 12px 0",
                   fontFamily: "'Roboto Slab', serif",
                   textDecoration: "underline"
-                }} href="mailto:ishq2027@cutm.ac.in">ishq2027@cutm.ac.in</a>
+                }} href="mailto:ishq2027@cutmap.ac.in">ishq2027@cutmap.ac.in</a>
               </p>
             </div>
 

@@ -1,12 +1,12 @@
 /* ===== ISHQ-Committee WRAPPER ===== */
-.ishq-committee-wrapper {
+.ishq-comm-container {
   min-height: 100vh;
   background: #F5F0E8;
   padding-top: 80px;
 }
 
 /* ===== ISHQ-Committee HERO SECTION ===== */
-.ishq-committee-hero {
+.ishq-comm-hero {
   background: linear-gradient(135deg, #0B1E38 0%, #1A3B5C 100%);
   padding: 40px 20px;
   text-align: center;
@@ -16,7 +16,7 @@
   overflow: hidden;
 }
 
-.ishq-committee-hero::before {
+.ishq-comm-hero::before {
   content: 'ISHQ-Committee';
   position: absolute;
   top: 50%;
@@ -32,12 +32,12 @@
   z-index: 0;
 }
 
-.ishq-committee-hero > * {
+.ishq-comm-hero > * {
   position: relative;
   z-index: 1;
 }
 
-.ishq-committee-hero-title {
+.ishq-comm-title {
   font-size: 36px;
   font-weight: 800;
   margin: 0 0 6px 0;
@@ -45,7 +45,7 @@
   color: #F5F0E8;
 }
 
-.ishq-committee-hero-subtitle {
+.ishq-comm-subtitle {
   font-size: 15px;
   color: #D5D0C8;
   font-weight: 400;
@@ -53,7 +53,7 @@
 }
 
 /* ISHQ-Committee Hero Shapes */
-.ishq-committee-hero-shapes {
+.ishq-comm-hero-shapes {
   position: absolute;
   top: 0;
   left: 0;
@@ -64,397 +64,322 @@
   pointer-events: none;
 }
 
-.ishq-committee-shape {
+.ishq-comm-shape {
   position: absolute;
   border-radius: 50%;
   opacity: 0.05;
 }
 
-.ishq-committee-shape-1 {
+.ishq-comm-shape-1 {
   width: 250px;
   height: 250px;
   background: #476E9E;
   top: -80px;
   right: -80px;
-  animation: ishqCommitteeFloat 8s ease-in-out infinite;
+  animation: ishqCommFloat 8s ease-in-out infinite;
 }
 
-.ishq-committee-shape-2 {
+.ishq-comm-shape-2 {
   width: 200px;
   height: 200px;
   background: #A93122;
   bottom: -60px;
   left: -60px;
-  animation: ishqCommitteeFloat 10s ease-in-out infinite reverse;
+  animation: ishqCommFloat 10s ease-in-out infinite reverse;
 }
 
-@keyframes ishqCommitteeFloat {
+@keyframes ishqCommFloat {
   0%, 100% { transform: translate(0, 0) scale(1); }
   50% { transform: translate(20px, -20px) scale(1.1); }
 }
 
-/* ===== ISHQ-Committee CONTAINER ===== */
-.ishq-committee-container {
-  max-width: 1100px;
+/* ===== ISHQ-Committee BODY ===== */
+.ishq-comm-body {
+  max-width: 1200px;
   margin: 0 auto;
   padding: 50px 20px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
-/* ===== ISHQ-Committee COMING SOON CARD ===== */
-.ishq-committee-coming-soon {
-  background: white;
+/* ===== ISHQ-Committee BLOCK ===== */
+.ishq-comm-block {
+  background: #FFFFFF;
   border-radius: 20px;
-  padding: 50px 40px;
-  text-align: center;
+  padding: 28px 32px 32px;
   box-shadow: 0 10px 30px rgba(11, 30, 56, 0.08);
   border: 1px solid #D5D0C8;
-  margin-bottom: 40px;
-  position: relative;
-  overflow: hidden;
-}
-
-.ishq-committee-coming-soon::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  right: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(71, 110, 158, 0.03) 0%, transparent 70%);
-  pointer-events: none;
-}
-
-.ishq-committee-coming-soon-icon {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 20px;
-  background: rgba(71, 110, 158, 0.1);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 36px;
-  color: #476E9E;
   transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
 }
 
-.ishq-committee-coming-soon:hover .ishq-committee-coming-soon-icon {
-  transform: scale(1.1) rotate(-5deg);
-  background: rgba(71, 110, 158, 0.2);
+.ishq-comm-block.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.ishq-committee-coming-soon h2 {
-  font-size: 28px;
-  font-weight: 700;
-  color: #0B1E38;
-  margin: 0 0 12px 0;
-  font-family: 'Roboto Slab', serif;
-}
-
-.ishq-committee-coming-soon p {
-  font-size: 16px;
-  color: #1A3B5C;
-  line-height: 1.8;
-  max-width: 700px;
-  margin: 0 auto 30px;
-  font-family: 'Roboto Slab', serif;
-}
-
-/* ISHQ-Committee Features */
-.ishq-committee-coming-soon-features {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.ishq-committee-feature-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 16px;
-  background: #F5F0E8;
-  border-radius: 12px;
-  font-size: 14px;
-  color: #1A3B5C;
-  font-family: 'Roboto Slab', serif;
-  transition: all 0.3s ease;
-}
-
-.ishq-committee-feature-item:hover {
-  background: #E8E0D5;
-  transform: translateY(-2px);
-}
-
-.feature-icon {
-  color: #476E9E;
-  font-size: 18px;
-}
-
-/* ===== ISHQ-Committee INFO GRID ===== */
-.ishq-committee-info-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  margin-bottom: 40px;
-}
-
-.ishq-committee-info-card {
-  background: white;
-  border-radius: 16px;
-  padding: 28px 20px;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(11, 30, 56, 0.06);
-  border: 1px solid #D5D0C8;
-  transition: all 0.3s ease;
-}
-
-.ishq-committee-info-card:hover {
-  transform: translateY(-4px);
+.ishq-comm-block:hover {
   box-shadow: 0 16px 40px rgba(11, 30, 56, 0.12);
   border-color: #476E9E;
 }
 
-.ishq-committee-info-icon {
-  width: 50px;
-  height: 50px;
-  margin: 0 auto 12px;
-  background: rgba(71, 110, 158, 0.08);
+/* ===== ISHQ-Committee BLOCK HEADER ===== */
+.ishq-comm-block-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 16px;
+  border-bottom: 3px solid;
+  margin-bottom: 20px;
+}
+
+.ishq-comm-block-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.ishq-comm-block-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+  flex: 1;
+}
+
+.ishq-comm-block-count {
+  color: #F5F0E8;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 2px 12px;
+  border-radius: 20px;
+  font-family: 'Roboto Slab', serif;
+  flex-shrink: 0;
+}
+
+/* ===== ISHQ-Committee CHIPS ===== */
+.ishq-comm-chips {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.ishq-comm-chip {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 16px;
+  background: var(--chip-bg, #F5F0E8);
+  border-radius: 12px;
+  border-left: 4px solid var(--chip-color, #476E9E);
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateX(-15px);
+}
+
+.ishq-comm-chip.visible {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.ishq-comm-chip:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 15px rgba(11, 30, 56, 0.08);
+}
+
+.ishq-comm-chip-avatar {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
-  color: #476E9E;
-  transition: all 0.3s ease;
+  color: #F5F0E8;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Roboto Slab', serif;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
 }
 
-.ishq-committee-info-card:hover .ishq-committee-info-icon {
-  background: rgba(71, 110, 158, 0.15);
+.ishq-comm-chip:hover .ishq-comm-chip-avatar {
   transform: scale(1.05);
 }
 
-.ishq-committee-info-card h3 {
-  font-size: 16px;
-  font-weight: 700;
-  color: #0B1E38;
-  margin: 0 0 6px 0;
-  font-family: 'Roboto Slab', serif;
+.ishq-comm-chip-info {
+  flex: 1;
+  min-width: 0;
 }
 
-.ishq-committee-info-card p {
+.ishq-comm-chip-name {
   font-size: 14px;
-  color: #1A3B5C;
-  margin: 0;
-  font-family: 'Roboto Slab', serif;
-}
-
-/* ===== ISHQ-Committee NOTE ===== */
-.ishq-committee-note {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  background: white;
-  padding: 20px 28px;
-  border-radius: 14px;
-  border-left: 5px solid #A93122;
-  box-shadow: 0 4px 20px rgba(11, 30, 56, 0.06);
-}
-
-.ishq-committee-note-icon {
-  color: #A93122;
-  font-size: 20px;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
-.ishq-committee-note p {
-  font-size: 15px;
-  color: #1A3B5C;
-  line-height: 1.8;
-  margin: 0;
-  font-family: 'Roboto Slab', serif;
-}
-
-.ishq-committee-note strong {
+  font-weight: 600;
   color: #0B1E38;
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+  line-height: 1.3;
 }
 
-/* ===== ISHQ-Committee RESPONSIVE ===== */
-@media (max-width: 992px) {
-  .ishq-committee-info-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
+.ishq-comm-chip-desig {
+  font-size: 12px;
+  color: #1A3B5C;
+  margin: 2px 0 0 0;
+  font-family: 'Roboto Slab', serif;
+  opacity: 0.75;
+}
 
-  .ishq-committee-coming-soon-features {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+/* ===== RESPONSIVE ===== */
+@media screen and (max-width: 992px) {
+  .ishq-comm-chips {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 }
 
-@media (max-width: 768px) {
-  .ishq-committee-wrapper {
+@media screen and (max-width: 768px) {
+  .ishq-comm-container {
     padding-top: 100px;
   }
 
-  .ishq-committee-hero-title {
-    font-size: 28px;
+  .ishq-comm-hero {
+    padding: 28px 15px;
   }
 
-  .ishq-committee-hero-subtitle {
-    font-size: 14px;
+  .ishq-comm-title {
+    font-size: 26px;
   }
 
-  .ishq-committee-hero::before {
+  .ishq-comm-subtitle {
+    font-size: 13px;
+  }
+
+  .ishq-comm-hero::before {
     font-size: 50px;
     letter-spacing: 5px;
   }
 
-  .ishq-committee-container {
+  .ishq-comm-body {
     padding: 30px 16px 40px;
+    gap: 24px;
   }
 
-  .ishq-committee-coming-soon {
-    padding: 35px 24px;
+  .ishq-comm-block {
+    padding: 20px 18px 24px;
   }
 
-  .ishq-committee-coming-soon h2 {
-    font-size: 24px;
+  .ishq-comm-block-title {
+    font-size: 17px;
   }
 
-  .ishq-committee-coming-soon p {
-    font-size: 15px;
-  }
-
-  .ishq-committee-coming-soon-icon {
-    width: 64px;
-    height: 64px;
-    font-size: 28px;
-  }
-
-  .ishq-committee-feature-item {
-    font-size: 13px;
-    padding: 10px 14px;
-  }
-
-  .ishq-committee-info-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-  }
-
-  .ishq-committee-info-card {
-    padding: 22px 16px;
-  }
-
-  .ishq-committee-info-card h3 {
-    font-size: 15px;
-  }
-
-  .ishq-committee-note {
-    padding: 18px 20px;
-  }
-
-  .ishq-committee-note p {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 576px) {
-  .ishq-committee-hero-title {
-    font-size: 24px;
-  }
-
-  .ishq-committee-hero-subtitle {
-    font-size: 13px;
-  }
-
-  .ishq-committee-hero::before {
-    font-size: 35px;
-    letter-spacing: 3px;
-  }
-
-  .ishq-committee-coming-soon {
-    padding: 28px 18px;
-  }
-
-  .ishq-committee-coming-soon h2 {
-    font-size: 20px;
-  }
-
-  .ishq-committee-coming-soon p {
-    font-size: 14px;
-  }
-
-  .ishq-committee-coming-soon-icon {
-    width: 56px;
-    height: 56px;
-    font-size: 24px;
-  }
-
-  .ishq-committee-coming-soon-features {
+  .ishq-comm-chips {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
 
-  .ishq-committee-feature-item {
-    font-size: 12px;
-    padding: 8px 12px;
+  .ishq-comm-chip {
+    padding: 10px 14px;
   }
 
-  .feature-icon {
-    font-size: 15px;
-  }
-
-  .ishq-committee-info-grid {
-    grid-template-columns: 1fr;
-    gap: 14px;
-  }
-
-  .ishq-committee-info-card {
-    padding: 18px 14px;
-  }
-
-  .ishq-committee-info-card h3 {
-    font-size: 14px;
-  }
-
-  .ishq-committee-info-card p {
+  .ishq-comm-chip-avatar {
+    width: 34px;
+    height: 34px;
     font-size: 13px;
   }
 
-  .ishq-committee-note {
-    padding: 16px 16px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  .ishq-comm-chip-name {
+    font-size: 13px;
   }
 
-  .ishq-committee-note p {
-    font-size: 13px;
+  .ishq-comm-chip-desig {
+    font-size: 11px;
   }
 }
 
-@media (max-width: 400px) {
-  .ishq-committee-hero-title {
-    font-size: 20px;
+@media screen and (max-width: 576px) {
+  .ishq-comm-title {
+    font-size: 22px;
   }
 
-  .ishq-committee-hero-subtitle {
+  .ishq-comm-subtitle {
     font-size: 12px;
   }
 
-  .ishq-committee-hero::before {
+  .ishq-comm-hero::before {
+    font-size: 35px;
+    letter-spacing: 3px;
+  }
+
+  .ishq-comm-chips {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .ishq-comm-block {
+    padding: 16px 14px 20px;
+  }
+
+  .ishq-comm-block-title {
+    font-size: 15px;
+  }
+
+  .ishq-comm-block-count {
+    font-size: 11px;
+    padding: 1px 10px;
+  }
+
+  .ishq-comm-chip {
+    padding: 10px 12px;
+  }
+
+  .ishq-comm-chip-avatar {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .ishq-comm-chip-name {
+    font-size: 12px;
+  }
+
+  .ishq-comm-chip-desig {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ishq-comm-title {
+    font-size: 18px;
+  }
+
+  .ishq-comm-hero::before {
     font-size: 28px;
     letter-spacing: 2px;
   }
 
-  .ishq-committee-coming-soon-features {
-    grid-template-columns: 1fr;
+  .ishq-comm-block-header {
+    gap: 10px;
+    padding-bottom: 12px;
   }
 
-  .ishq-committee-feature-item {
-    justify-content: center;
+  .ishq-comm-block-title {
+    font-size: 13px;
+  }
+
+  .ishq-comm-chip {
+    padding: 8px 10px;
+  }
+
+  .ishq-comm-chip-avatar {
+    width: 26px;
+    height: 26px;
+    font-size: 10px;
+  }
+
+  .ishq-comm-chip-name {
+    font-size: 11px;
   }
 }

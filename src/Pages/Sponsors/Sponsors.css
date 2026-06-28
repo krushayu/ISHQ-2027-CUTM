@@ -1,41 +1,43 @@
-.sponsors-wrapper {
+/* ===== ISHQ-Sponsors WRAPPER ===== */
+.ishq-sponsors-wrapper {
   min-height: 100vh;
   background: #F5F0E8;
   padding-top: 80px;
 }
 
-.sponsors-hero {
+/* ===== ISHQ-Sponsors HERO ===== */
+.ishq-sponsors-hero {
   background: linear-gradient(135deg, #0B1E38 0%, #1A3B5C 100%);
-  padding: 36px 20px;
+  padding: 40px 20px;
   text-align: center;
-  color: white;
+  color: #F5F0E8;
   border-bottom: 3px solid #476E9E;
   position: relative;
   overflow: hidden;
 }
 
-.sponsors-hero::before {
-  content: 'ISHQ - 2027';
+.ishq-sponsors-hero::before {
+  content: 'ISHQ-Sponsors';
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 100px;
+  font-size: 80px;
   font-weight: 800;
-  color: rgba(245, 240, 232, 0.08);
-  letter-spacing: 10px;
+  color: rgba(245, 240, 232, 0.06);
+  letter-spacing: 8px;
   white-space: nowrap;
   pointer-events: none;
   user-select: none;
   z-index: 0;
 }
 
-.sponsors-hero > * {
+.ishq-sponsors-hero > * {
   position: relative;
   z-index: 1;
 }
 
-.sponsors-hero-title {
+.ishq-sponsors-hero-title {
   font-size: 36px;
   font-weight: 800;
   margin: 0 0 6px 0;
@@ -43,217 +45,515 @@
   color: #F5F0E8;
 }
 
-.sponsors-hero-subtitle {
+.ishq-sponsors-hero-subtitle {
   font-size: 15px;
   color: #D5D0C8;
   font-weight: 400;
   font-family: 'Roboto Slab', serif;
 }
 
-.sponsors-container {
+/* ===== ISHQ-Sponsors CONTAINER ===== */
+.ishq-sponsors-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 20px;
+  padding: 50px 20px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-.sponsors-cmt-section {
-  background: white;
-  border-radius: 20px;
-  padding: 30px 40px;
-  margin-bottom: 40px;
-  box-shadow: 0 10px 30px rgba(11, 30, 56, 0.1);
-  border-left: 5px solid #476E9E;
-}
-
-.sponsors-cmt-title {
-  font-size: 25px;
-  font-weight: 800;
-  color: #0B1E38;
-  margin-bottom: 12px;
-  letter-spacing: 0.5px;
-  font-family: 'Roboto Slab', serif;
-}
-
-.sponsors-cmt-text {
-  font-size: 20px;
-  line-height: 1.8;
-  color: #1A3B5C;
-  margin: 0;
-  text-align: justify;
-  font-family: 'Roboto Slab', serif;
-}
-
-.sponsors-card {
-  background: white;
-  border-radius: 20px;
-  padding: 40px;
-  margin-bottom: 40px;
-  box-shadow: 0 10px 30px rgba(11, 30, 56, 0.1);
-}
-
-.sponsors-section-title {
+/* ===== ISHQ-Sponsors Section Titles ===== */
+.ishq-sponsors-section-title {
   font-size: 28px;
   font-weight: 700;
   color: #0B1E38;
-  margin-bottom: 30px;
+  margin: 0 0 20px 0;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   font-family: 'Roboto Slab', serif;
 }
 
-.sponsors-section-icon {
+.ishq-sponsors-section-icon {
   color: #476E9E;
   font-size: 28px;
 }
 
-.sponsors-company {
-  padding: 20px 0;
-}
-
-.sponsors-company-header {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin-bottom: 20px;
-}
-
-.sponsors-company-logo {
-  width: 80px;
-  height: auto;
-  object-fit: contain;
-}
-
-.sponsors-company-name {
-  font-size: 32px;
-  font-weight: 700;
-  color: #0B1E38;
-  margin: 0;
-  font-family: 'Roboto Slab', serif;
-}
-
-.sponsors-description {
-  font-size: 16px;
-  line-height: 1.8;
-  color: #1A3B5C;
-  margin-bottom: 25px;
-  text-align: justify;
-  font-family: 'Roboto Slab', serif;
-}
-
-.sponsors-visit-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 30px;
-  background: linear-gradient(135deg, #476E9E, #1A3B5C);
-  color: #F5F0E8;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(71, 110, 158, 0.3);
-  border: none;
-  cursor: pointer;
-  font-family: 'Roboto Slab', serif;
-}
-
-.sponsors-visit-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(71, 110, 158, 0.4);
-  background: linear-gradient(135deg, #A93122, #C24B3A);
-}
-
-.sponsors-call-section {
-  background: white;
+/* ===== Why Exhibit or Sponsor Section ===== */
+.ishq-sponsors-why-section {
+  background: #FFFFFF;
   border-radius: 20px;
   padding: 40px;
-  box-shadow: 0 10px 30px rgba(11, 30, 56, 0.1);
-  margin-bottom: 40px;
+  box-shadow: 0 10px 30px rgba(11, 30, 56, 0.08);
+  border: 1px solid #D5D0C8;
 }
 
-.sponsors-call-title {
-  font-size: 36px;
-  font-weight: 700;
-  color: #0B1E38;
-  text-align: center;
-  margin-bottom: 15px;
+.ishq-sponsors-benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  font-family: 'Roboto Slab', serif;
+  flex-direction: column;
+  gap: 14px;
 }
 
-.sponsors-call-icon {
-  color: #476E9E;
-  font-size: 36px;
-}
-
-.sponsors-call-intro {
-  font-size: 16px;
-  text-align: center;
-  color: #1A3B5C;
-  margin-bottom: 40px;
-  font-family: 'Roboto Slab', serif;
-}
-
-.sponsors-tier {
+.ishq-sponsors-benefits-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px 18px;
   background: #F5F0E8;
-  border-radius: 15px;
-  padding: 30px;
-  margin-bottom: 25px;
-  border-left: 5px solid;
+  border-radius: 12px;
+  border-left: 4px solid #476E9E;
+  font-size: 15px;
+  color: #1A3B5C;
+  line-height: 1.7;
+  font-family: 'Roboto Slab', serif;
+  transition: all 0.3s ease;
 }
 
-.sponsors-tier.platinum {
-  border-color: #D5D0C8;
+.ishq-sponsors-benefits-list li:hover {
+  background: #E8E0D5;
+  transform: translateX(4px);
+}
+
+.ishq-benefit-icon {
+  color: #476E9E;
+  font-size: 18px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ===== Sponsorship Packages Section ===== */
+.ishq-sponsors-packages-section {
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(11, 30, 56, 0.08);
+  border: 1px solid #D5D0C8;
+}
+
+.ishq-sponsors-packages-intro {
+  font-size: 16px;
+  color: #1A3B5C;
+  font-family: 'Roboto Slab', serif;
+  margin: -10px 0 28px 0;
+}
+
+.ishq-sponsors-packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+/* ===== Sponsorship Tier Cards ===== */
+.ishq-sponsors-tier {
+  background: #F5F0E8;
+  border-radius: 16px;
+  padding: 24px 22px;
+  border-left: 5px solid;
+  transition: all 0.3s ease;
+}
+
+.ishq-sponsors-tier:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(11, 30, 56, 0.12);
+}
+
+.ishq-platinum {
+  border-color: #64748b;
   background: linear-gradient(135deg, #F5F0E8, #E8E0D5);
 }
 
-.sponsors-tier.gold {
+.ishq-gold {
   border-color: #D4A017;
   background: linear-gradient(135deg, #FDF8EE, #FBF0D5);
 }
 
-.sponsors-tier.silver {
+.ishq-silver {
   border-color: #B0B0B0;
   background: linear-gradient(135deg, #F5F0E8, #E8E0D5);
 }
 
-.sponsors-tier.bronze {
+.ishq-bronze {
   border-color: #CD7F32;
   background: linear-gradient(135deg, #FDF5EE, #F5E8D5);
 }
 
-.sponsors-tier-header {
+.ishq-sponsors-tier-header {
   display: flex;
   align-items: center;
-  gap: 15px;
-  margin-bottom: 20px;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
 }
 
-.sponsors-tier-icon {
-  font-size: 2rem;
+.ishq-sponsors-tier-icon {
+  font-size: 24px;
 }
 
-.sponsors-tier.platinum .sponsors-tier-icon {
-  color: #64748b;
+.ishq-platinum .ishq-sponsors-tier-icon { color: #64748b; }
+.ishq-gold .ishq-sponsors-tier-icon { color: #D4A017; }
+.ishq-silver .ishq-sponsors-tier-icon { color: #94a3b8; }
+.ishq-bronze .ishq-sponsors-tier-icon { color: #CD7F32; }
+
+.ishq-sponsors-tier-header h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0B1E38;
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+  flex: 1;
 }
 
-.sponsors-tier.gold .sponsors-tier-icon {
-  color: #D4A017;
+.ishq-sponsors-tier-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #476E9E;
+  font-family: 'Roboto Slab', serif;
+  background: rgba(71, 110, 158, 0.1);
+  padding: 4px 14px;
+  border-radius: 20px;
 }
 
-.sponsors-tier.silver .sponsors-tier-icon {
-  color: #94a3b8;
+.ishq-sponsors-tier-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.sponsors-tier.bronze .sponsors-tier-icon {
-  color: #CD7F32;
+.ishq-sponsors-tier-benefits li {
+  padding: 8px 0;
+  padding-left: 24px;
+  position: relative;
+  font-size: 14px;
+  color: #1A3B5C;
+  font-family: 'Roboto Slab', serif;
+  line-height: 1.6;
+  border-bottom: 1px solid rgba(213, 208, 200, 0.3);
 }
 
-.sponsors-tier-header h3 {
+.ishq-sponsors-tier-benefits li:last-child {
+  border-bottom: none;
+}
+
+.ishq-sponsors-tier-benefits li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #476E9E;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* ===== Contact Section ===== */
+.ishq-sponsors-contact-section {
+  background: #09636d7c;
+  border-radius: 20px;
+  padding: 50px 40px;
+  text-align: center;
+  border: 1px solid rgba(71, 110, 158, 0.3);
+}
+
+.ishq-sponsors-contact-content .ishq-sponsors-section-title {
+  color: #F5F0E8;
+  justify-content: center;
+}
+
+.ishq-sponsors-contact-content .ishq-sponsors-section-icon {
+  color: #476E9E;
+}
+
+.ishq-sponsors-contact-content p {
+  font-size: 17px;
+  color: #D5D0C8;
+  font-family: 'Roboto Slab', serif;
+  margin: -10px 0 28px 0;
+}
+
+.ishq-sponsors-contact-content a[href^="mailto"] {
+  color: #476E9E;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.ishq-sponsors-contact-content a[href^="mailto"]:hover {
+  color: #A93122;
+  text-decoration: underline;
+}
+
+.ishq-sponsors-contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 44px;
+  background: linear-gradient(135deg, #476E9E 0%, #1A3B5C 100%);
+  color: #F5F0E8;
+  border: 2px solid #476E9E;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Roboto Slab', serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 25px rgba(71, 110, 158, 0.3);
+}
+
+.ishq-sponsors-contact-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(71, 110, 158, 0.5);
+  background: linear-gradient(135deg, #A93122 0%, #C24B3A 100%);
+  border-color: #A93122;
+}
+
+.ishq-btn-icon {
+  font-size: 20px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .ishq-sponsors-packages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .ishq-sponsors-wrapper {
+    padding-top: 100px;
+  }
+
+  .ishq-sponsors-hero {
+    padding: 28px 15px;
+  }
+
+  .ishq-sponsors-hero-title {
+    font-size: 26px;
+  }
+
+  .ishq-sponsors-hero-subtitle {
+    font-size: 13px;
+  }
+
+  .ishq-sponsors-hero::before {
+    font-size: 50px;
+    letter-spacing: 5px;
+  }
+
+  .ishq-sponsors-container {
+    padding: 30px 16px 40px;
+    gap: 28px;
+  }
+
+  .ishq-sponsors-why-section,
+  .ishq-sponsors-packages-section {
+    padding: 24px 20px;
+  }
+
+  .ishq-sponsors-section-title {
+    font-size: 22px;
+  }
+
+  .ishq-sponsors-benefits-list li {
+    font-size: 14px;
+    padding: 12px 14px;
+  }
+
+  .ishq-sponsors-packages-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .ishq-sponsors-tier {
+    padding: 20px 18px;
+  }
+
+  .ishq-sponsors-tier-header h3 {
+    font-size: 18px;
+  }
+
+  .ishq-sponsors-contact-section {
+    padding: 35px 25px;
+  }
+
+  .ishq-sponsors-contact-content p {
+    font-size: 15px;
+  }
+
+  .ishq-sponsors-contact-btn {
+    padding: 14px 32px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .ishq-sponsors-hero-title {
+    font-size: 22px;
+  }
+
+  .ishq-sponsors-hero-subtitle {
+    font-size: 12px;
+  }
+
+  .ishq-sponsors-hero::before {
+    font-size: 35px;
+    letter-spacing: 3px;
+  }
+
+  .ishq-sponsors-why-section,
+  .ishq-sponsors-packages-section {
+    padding: 18px 16px;
+  }
+
+  .ishq-sponsors-section-title {
+    font-size: 18px;
+  }
+
+  .ishq-sponsors-section-icon {
+    font-size: 22px;
+  }
+
+  .ishq-sponsors-benefits-list li {
+    font-size: 13px;
+    padding: 10px 12px;
+    gap: 10px;
+  }
+
+  .ishq-benefit-icon {
+    font-size: 15px;
+  }
+
+  .ishq-sponsors-tier {
+    padding: 16px 14px;
+  }
+
+  .ishq-sponsors-tier-header h3 {
+    font-size: 16px;
+  }
+
+  .ishq-sponsors-tier-price {
+    font-size: 14px;
+  }
+
+  .ishq-sponsors-tier-benefits li {
+    font-size: 13px;
+    padding: 6px 0 6px 22px;
+  }
+
+  .ishq-sponsors-contact-section {
+    padding: 28px 18px;
+  }
+
+  .ishq-sponsors-contact-content p {
+    font-size: 14px;
+  }
+
+  .ishq-sponsors-contact-btn {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+  .ishq-btn-icon {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 400px) {
+  .ishq-sponsors-hero-title {
+    font-size: 18px;
+  }
+
+  .ishq-sponsors-hero::before {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+
+  .ishq-sponsors-section-title {
+    font-size: 16px;
+  }
+
+  .ishq-sponsors-benefits-list li {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+}
+
+/* ===== ISHQ-Sponsors Valued Section ===== */
+.ishq-sponsors-valued-section {
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(11, 30, 56, 0.08);
+  border: 1px solid #D5D0C8;
+}
+
+.ishq-sponsors-valued-section .ishq-sponsors-section-title {
+  justify-content: center;
+}
+
+.ishq-sponsors-section-icon {
+  font-size: 28px;
+}
+
+.ishq-sponsors-valued-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.ishq-sponsor-company {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 700px;
+  background: #F5F0E8;
+  border-radius: 16px;
+  padding: 30px 35px;
+  border: 1px solid #D5D0C8;
+  transition: all 0.3s ease;
+}
+
+.ishq-sponsor-company:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(11, 30, 56, 0.12);
+  border-color: #476E9E;
+}
+
+.ishq-sponsor-logo-container {
+  width: 180px;
+  height: 120px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #D5D0C8;
+  transition: all 0.3s ease;
+}
+
+.ishq-sponsor-company:hover .ishq-sponsor-logo-container {
+  border-color: #476E9E;
+  box-shadow: 0 4px 15px rgba(71, 110, 158, 0.1);
+}
+
+.ishq-sponsor-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.ishq-sponsor-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ishq-sponsor-company-name {
   font-size: 24px;
   font-weight: 700;
   color: #0B1E38;
@@ -261,128 +561,98 @@
   font-family: 'Roboto Slab', serif;
 }
 
-.sponsors-benefits {
-  list-style: none;
-  padding: 0;
-}
-
-.sponsors-benefits li {
-  padding: 10px 0;
-  padding-left: 25px;
-  position: relative;
-  font-size: 16px;
+.ishq-sponsor-details {
+  font-size: 15px;
   color: #1A3B5C;
+  margin: 0;
   font-family: 'Roboto Slab', serif;
 }
 
-.sponsors-benefits li::before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  color: #476E9E;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.sponsors-contact {
-  text-align: center;
-  margin-top: 40px;
-  padding-top: 30px;
-  border-top: 2px solid #D5D0C8;
-}
-
-.sponsors-contact p {
-  font-size: 16px;
-  color: #1A3B5C;
-  margin-bottom: 20px;
-  font-family: 'Roboto Slab', serif;
-}
-
-.sponsors-contact a[href^="mailto"] {
-  color: #476E9E;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.sponsors-contact a[href^="mailto"]:hover {
-  color: #A93122;
-}
-
-.sponsors-form-btn {
-  display: inline-block;
-  padding: 15px 40px;
-  background: linear-gradient(135deg, #A93122, #C24B3A);
+.ishq-sponsor-visit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 28px;
+  background: linear-gradient(135deg, #476E9E 0%, #1A3B5C 100%);
   color: #F5F0E8;
-  text-decoration: none;
-  border-radius: 30px;
-  font-size: 16px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 6px 20px rgba(169, 49, 34, 0.3);
   border: none;
-  cursor: pointer;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
   font-family: 'Roboto Slab', serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(71, 110, 158, 0.3);
+  align-self: flex-start;
+  margin-top: 4px;
 }
 
-.sponsors-form-btn:hover {
+.ishq-sponsor-visit-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 25px rgba(169, 49, 34, 0.4);
-  background: linear-gradient(135deg, #C24B3A, #A93122);
+  box-shadow: 0 8px 25px rgba(71, 110, 158, 0.4);
+  background: linear-gradient(135deg, #A93122 0%, #C24B3A 100%);
 }
 
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
-  .sponsors-wrapper {
-    padding-top: 100px;
+  .ishq-sponsors-valued-section {
+    padding: 24px 20px;
   }
 
-  .sponsors-hero {
-    padding: 28px 15px;
+  .ishq-sponsor-company {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px 20px;
+    gap: 20px;
   }
 
-  .sponsors-hero-title {
-    font-size: 26px;
+  .ishq-sponsor-logo-container {
+    width: 160px;
+    height: 100px;
+    padding: 16px;
   }
 
-  .sponsors-hero-subtitle {
-    font-size: 13px;
-  }
-
-  .sponsors-card,
-  .sponsors-call-section {
-    padding: 25px 20px;
-  }
-
-  .sponsors-call-title {
-    font-size: 28px;
-  }
-
-  .sponsors-tier-header h3 {
+  .ishq-sponsor-company-name {
     font-size: 20px;
   }
 
-  .sponsors-tier-header {
-    flex-direction: column;
-    align-items: flex-start;
+  .ishq-sponsor-details {
+    font-size: 14px;
   }
 
-  .sponsors-company-header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .sponsors-company-logo {
-    width: 70px;
-  }
-
-  .sponsors-company-name {
-    font-size: 24px;
+  .ishq-sponsor-visit-btn {
+    align-self: center;
+    padding: 9px 24px;
+    font-size: 13px;
   }
 }
 
 @media (max-width: 576px) {
-  .sponsors-hero::before {
-    font-size: 60px;
-    letter-spacing: 5px;
+  .ishq-sponsors-valued-section {
+    padding: 18px 16px;
+  }
+
+  .ishq-sponsor-company {
+    padding: 18px 14px;
+    gap: 16px;
+  }
+
+  .ishq-sponsor-logo-container {
+    width: 130px;
+    height: 85px;
+    padding: 12px;
+  }
+
+  .ishq-sponsor-company-name {
+    font-size: 18px;
+  }
+
+  .ishq-sponsor-details {
+    font-size: 13px;
+  }
+
+  .ishq-sponsor-visit-btn {
+    padding: 8px 20px;
+    font-size: 12px;
   }
 }

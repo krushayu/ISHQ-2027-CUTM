@@ -97,7 +97,7 @@ const Navbar = () => {
                 International Conference<br/>on</div>
                 <h1>Sustainable, Intelligent Systems, Communication Hardware, and Quantum Technology (ISHQ)</h1>
                 <div className="conference-info">
-                  <img src="/assets/IEEE_AP.png" alt="IEEE_AP" className="info-sponsor-logo ap-logo" />
+                  <img src="/assets/ISHQ _Hexagon_Logo.png" alt="ISHQ _Hexagon_Logo" className="info-sponsor-logo ap-logo" />
                   <div className="conference-info-details">
                     <div className="info-item">
                       <span className="info-text">📍 Centurion University of Technology and Management, Vizianagaram, AndraPradesh</span>
@@ -106,7 +106,7 @@ const Navbar = () => {
                       <span className="info-text">📅 10<sup>th</sup> - 12<sup>th</sup> August 2027</span>
                     </div>
                   </div>
-                  <img src="/assets/com_soc.png" alt="Computer Society" className="info-sponsor-logo" />
+                  <img src="/assets/APS_LOGO.svg" alt="APS_LOGO" className="info-sponsor-logo" />
                 </div>
                 <div className="sponsor-tag">
                   <span className="tag-icon">⚡</span>
@@ -210,8 +210,8 @@ const Navbar = () => {
                 </a>
               </div>
               <div className="mobile-conference-title">
-                <div className="mobile-badge">3rd International Conference<br/>on</div>
-                <div className="mobile-tagline">Signal Processing, Communication, Power & Embedded Systems</div>
+                <div className="mobile-badge">International Conference<br/>on</div>
+                <div className="mobile-tagline">Sustainable, Intelligent Systems, Communication Hardware, and Quantum Technology (ISHQ)</div>
               </div>
               <div className="mobile-logo-item">
                 <img src="/assets/ieee_logo.png" alt="IEEE Logo" className="mobile-logo-img" />
@@ -234,15 +234,15 @@ const Navbar = () => {
             <div className="mobile-info-strip">
               <div className="mobile-info-item">
                 <span className="mobile-info-icon">📅</span>
-                <span className="mobile-info-text">Feb 4th-6th, 2027</span>
+                <span className="mobile-info-text">Aug 10th-12th, 2027</span>
               </div>
               <div className="mobile-info-item">
                 <span className="mobile-info-icon">📍</span>
-                <span className="mobile-info-text">CUTM, PKD, Odisha</span>
+                <span className="mobile-info-text">CUTM, VZM, AP</span>
               </div>
               <div className="mobile-info-item">
                 <span className="mobile-info-icon">⚡</span>
-                <span className="mobile-info-text">IEEE Co-Sponsored</span>
+                <span className="mobile-info-text">IEEE Vizag Bay Section</span>
               </div>
             </div>
           </div>
@@ -260,8 +260,8 @@ const Navbar = () => {
             </div>
             <div className="menu-logo-item">
               <div className="menu-logo-text">
-                <span className="menu-logo-main">SCOPES</span>
-                <span className="menu-logo-year">2027</span>
+                <span className="menu-logo-main">I S H Q</span>
+                <span className="menu-logo-year">2 0 2 7</span>
               </div>
             </div>
             <div className="menu-logo-item">
@@ -279,15 +279,15 @@ const Navbar = () => {
         
         <div className="mobile-menu-content">
           <div className="mobile-conference-info">
-            <h3>3rd International Conference<br/>on</h3>
-            <p>Signal Processing, Communication, Power & Embedded Systems</p>
+            <h3>International Conference<br/>on</h3>
+            <p>Sustainable, Intelligent Systems, Communication Hardware, and Quantum Technology (ISHQ)</p>
             <div className="mobile-date">
               <span className="date-icon">📅</span>
-              4th - 6st February 2027
+              10th - 12st February 2027
             </div>
             <div className="mobile-venue">
               <span className="venue-icon">📍</span>
-              Centurion University, Pkd, Odisha
+              Centurion University, VZM, AP
             </div>
           </div>
           

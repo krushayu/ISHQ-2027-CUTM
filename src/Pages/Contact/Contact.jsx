@@ -13,17 +13,17 @@ import { MdLocationOn } from "react-icons/md";
 const Contact = () => {
   const contactInfo = {
     address: {
-      room: "Room No: F-221, 2nd Floor, CRC-2",
-      department: "Department of ECE, School of Engineering & Technology",
-      university: "Centurion University of Technology & Management",
-      location: "R-Sitapur, Allurinagar, Paralakhemundi",
-      district: "Dist: Gajapati, Odisha - 761211"
+      // room: "Room No: F-221, 2nd Floor, CRC-2",
+      department: "Centurion University of Technology and Management, AP Campus,",
+      university: "Tekkali Village, Nellimarla Mandal,",
+      location: "Vizianagaram, Andhra Pradesh",
+      district: "Pin Code - 535003"
     },
     phone: [
       { number: "+91 7008242454", label: "ISHQ-Contact Chair" },
       { number: "+91 9937563329", label: "ISHQ-Contact Convener" }
     ],
-    email: "ISHQ2027@cutm.ac.in",
+    email: "ishq2027@cutmap.ac.in",
     mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3790.451155766673!2d83.39253029999999!3d18.189180099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3bef5e7fab5d93%3A0x8539c45d69778c2f!2sCenturion%20University%20Vizianagaram%20(CUTM)%20-%20BTech%20Engineering%20College%2C%20Paramedical%20Courses!5e0!3m2!1sen!2sin!4v1782239431791!5m2!1sen!2sin"
   };
 
@@ -52,7 +52,7 @@ const Contact = () => {
               </div>
               <h3>ISHQ-Contact Address</h3>
               <div className="ishq-contact-content">
-                <p>{contactInfo.address.room}</p>
+                {/* <p>{contactInfo.address.room}</p> */}
                 <p>{contactInfo.address.department}</p>
                 <p>{contactInfo.address.university}</p>
                 <p>{contactInfo.address.location}</p>
@@ -86,7 +86,7 @@ const Contact = () => {
               <h3>ISHQ-Contact Email</h3>
               <div className="ishq-contact-content">
                 <a href={`mailto:${contactInfo.email}`} className="ishq-contact-email-link">
-                  {contactInfo.email}
+                  ishq2027@cutmap.ac.in
                 </a>
                 <p className="ishq-contact-email-note">We respond within 24-48 hours</p>
               </div>

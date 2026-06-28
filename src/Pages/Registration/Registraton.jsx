@@ -99,9 +99,9 @@ const importantDates = [
   },
   {
     event: "Last Date for Paper Submission",
-    date: "31 March 2027",
-    start: new Date("2027-03-31"),
-    end: new Date("2027-03-31"),
+    date: "30 April 2027",
+    start: new Date("2027-04-30"),
+    end: new Date("2027-04-30"),
     icon: <FaFileAlt />,
   },
   {
@@ -110,6 +110,13 @@ const importantDates = [
     start: new Date("2027-05-30"),
     end: new Date("2027-05-30"),
     icon: <FaBell />,
+  },
+  {
+    event: "Registration & Camera-Ready Start",
+    date: "01 June 2027",
+    start: new Date("2027-06-01"),
+    end: new Date("2027-06-01"),
+    icon: <FaUserCheck />,
   },
   {
     event: "Registration & Camera-Ready Deadline",

@@ -103,8 +103,8 @@ const Accommodation = () => {
             </div>
             <h3>Contact for Assistance</h3>
             <p>
-              <a href="mailto:ISHQ2027@cutm.ac.in" className="ishq-accommodation-email-link">
-                ISHQ2027@cutm.ac.in
+              <a href="mailto:ishq2027@cutmap.ac.in" className="ishq-accommodation-email-link">
+                ishq2027@cutmap.ac.in
               </a>
             </p>
           </div>

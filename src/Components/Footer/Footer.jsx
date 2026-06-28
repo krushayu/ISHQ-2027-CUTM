@@ -119,15 +119,12 @@ const Footer = () => {
                         <div className="contact-details">
                           <h4>Address</h4>
                           <p>
-                            Room No: F-221, 2nd Floor, CRC-2
+                            Centurion University of Technology and Management, AP
                             <br />
-                            Department of ECE, School of Engineering &
-                            Technology,
+                            Tekkali Village, Nellimarla Mandal, Vizianagaram,
+                            Andhra Pradesh 
                             <br />
-                            Centurion University of Technology and Management,
-                            At: R-Sitapur, Allurinagar, Paralakhemundi
-                            <br />
-                            Dist: Gajapati, Odisha, India - 761211
+                            Pin Code - 535003
                           </p>
                         </div>
                       </div>
@@ -153,8 +150,8 @@ const Footer = () => {
                         <div className="contact-details">
                           <h4>Email</h4>
                           <p>
-                            <a href="mailto:ISHQ2027@cutm.ac.in">
-                              ISHQ2027@cutm.ac.in
+                            <a href="mailto:ishq2027@cutmap.ac.in">
+                              ishq2027@cutmap.ac.in
                             </a>
                             {/* <br />
                             <a href="mailto:debendra.sahoo@cutm.ac.in">
@@ -196,19 +193,37 @@ const Footer = () => {
           <div className="footer-container">
             <p className="developed-by">
               Design &amp; Developed by{" "}
-              <a href="https://www.linkedin.com/in/krushayu/" target="_blank" rel="noopener noreferrer" className="developer-link">krush@yu</a>{" "}
+              <a
+                href="https://www.linkedin.com/in/krushayu/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="developer-link"
+              >
+                krush@yu
+              </a>{" "}
               | 🌐
-              <a href="https://krushayu.in" target="_blank" rel="noopener noreferrer" className="developer-link">krushayu.in</a>
+              <a
+                href="https://krushayu.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="developer-link"
+              >
+                krushayu.in
+              </a>
             </p>
             <p className="copyright">
               © ISHQ-2027 || All rights reserved by Centurion University of
               Technology &amp; Management, India
             </p>
             <div className="flag-counter-wrap">
-            <a href="https://info.flagcounter.com/c7bk">
-              <img src="https://s01.flagcounter.com/count2/c7bk/bg_FFFFFF/txt_000000/border_CCCCCC/columns_5/maxflags_50/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0" />
-            </a>
-          </div>
+              <a href="https://info.flagcounter.com/c7bk">
+                <img
+                  src="https://s01.flagcounter.com/count2/c7bk/bg_FFFFFF/txt_000000/border_CCCCCC/columns_5/maxflags_50/viewers_0/labels_1/pageviews_1/flags_0/percent_0/"
+                  alt="Flag Counter"
+                  border="0"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </footer>
@@ -218,9 +233,23 @@ const Footer = () => {
         <div className="mobile-footer-content">
           <p className="developed-by">
             Design &amp; Developed by{" "}
-            <a href="https://www.linkedin.com/in/krushayu/" target="_blank" rel="noopener noreferrer" className="developer-link">krush@yu</a>{" "}
+            <a
+              href="https://www.linkedin.com/in/krushayu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="developer-link"
+            >
+              krush@yu
+            </a>{" "}
             | 🌐
-            <a href="https://krushayu.in" target="_blank" rel="noopener noreferrer" className="developer-link">krushayu.in</a>
+            <a
+              href="https://krushayu.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="developer-link"
+            >
+              krushayu.in
+            </a>
           </p>
           <p className="mobile-copyright">
             © ISHQ-2027 || All rights reserved by Centurion University of
@@ -228,7 +257,11 @@ const Footer = () => {
           </p>
           <div className="flag-counter-wrap">
             <a href="https://info.flagcounter.com/c7bk">
-              <img src="https://s01.flagcounter.com/count2/c7bk/bg_FFFFFF/txt_000000/border_CCCCCC/columns_5/maxflags_50/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0" />
+              <img
+                src="https://s01.flagcounter.com/count2/c7bk/bg_FFFFFF/txt_000000/border_CCCCCC/columns_5/maxflags_50/viewers_0/labels_1/pageviews_1/flags_0/percent_0/"
+                alt="Flag Counter"
+                border="0"
+              />
             </a>
           </div>
         </div>
