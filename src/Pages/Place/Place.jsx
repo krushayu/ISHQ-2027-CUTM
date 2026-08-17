@@ -121,7 +121,7 @@ const Places = () => {
     <div className="places-wrapper">
       <div className="places-hero">
         <h1 className="places-hero-title">Place of Visit</h1>
-        <p className="places-hero-subtitle">ISHQ-2027 Conference — Explore Nearby Attractions</p>
+        {/* <p className="places-hero-subtitle">ISHQ-2027 Conference — Explore Nearby Attractions</p> */}
       </div>
 
       <div className="places-container">

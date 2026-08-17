@@ -29,7 +29,7 @@ const Sponsors = () => {
     <div className="ishq-sponsors-wrapper">
       <div className="ishq-sponsors-hero">
         <h1 className="ishq-sponsors-hero-title">ISHQ-Sponsors</h1>
-        <p className="ishq-sponsors-hero-subtitle">ISHQ-2027 Conference</p>
+        {/* <p className="ishq-sponsors-hero-subtitle">ISHQ-2027 Conference</p> */}
       </div>
       
       <div className="ishq-sponsors-container">

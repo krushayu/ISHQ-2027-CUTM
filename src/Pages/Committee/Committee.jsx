@@ -464,7 +464,7 @@ const Committee = () => {
       <div className="ishq-comm-hero">
         <div className="ishq-comm-hero-content">
           <h1 className="ishq-comm-title">ISHQ-Committee</h1>
-          <p className="ishq-comm-subtitle">ISHQ-2027 Conference — Organizing Committee</p>
+          {/* <p className="ishq-comm-subtitle">ISHQ-2027 Conference — Organizing Committee</p> */}
         </div>
         <div className="ishq-comm-hero-shapes">
           <div className="ishq-comm-shape ishq-comm-shape-1"></div>
