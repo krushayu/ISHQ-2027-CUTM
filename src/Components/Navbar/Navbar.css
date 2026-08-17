@@ -21,7 +21,7 @@
 .conference-header {
   background: linear-gradient(135deg, #F5F0E8 0%, #FFFFFF 100%);
   color: #0B1E38;
-  padding: 12px 0;
+  padding: 16px 0;
   position: relative;
   overflow: hidden;
   border-bottom: 3px solid #476E9E;
@@ -57,8 +57,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 40px;
-  gap: 30px;
+  padding: 0 30px;
+  gap: 16px;
 }
 
 /* Header Logos */
@@ -68,7 +68,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  justify-content: flex-start;
+  gap: 8px;
+  width: 160px;
+  padding-top: 8px;
 }
 
 .header-logo:hover {
@@ -110,15 +113,24 @@
 }
 
 .header-logo-img {
-  height: 110px;
-  width: auto;
+  height: 150px;
+  width: 160px;
   object-fit: contain;
   filter: brightness(1.2);
   transition: transform 0.3s ease;
+  margin-top: -40px;
 }
 
 .left-header-logo .header-logo-img {
-  height: 170px;
+  height: 180px;
+  width: 180px;
+  margin-top: -45px;
+}
+
+.right-header-logo .header-logo-img {
+  height: 150px;
+  width: 160px;
+  margin-top: -20px;
 }
 
 .header-logo:hover .header-logo-img {
@@ -130,6 +142,10 @@
   flex: 1;
   text-align: center;
   min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @property --angle {
@@ -146,12 +162,13 @@
   display: inline-block;
   background: linear-gradient(135deg, #0B1E38, #1A3B5C);
   color: #F5F0E8;
-  padding: 8px 28px;
+  padding: 8px 26px;
   border-radius: 20px;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
   letter-spacing: 0.5px;
   margin-bottom: 10px;
+  line-height: 1.5;
   position: relative;
   box-shadow: 0 4px 18px rgba(71, 110, 158, 0.25);
   border: 1.5px solid rgba(153, 176, 199, 0.4);
@@ -166,19 +183,31 @@
 }
 
 .conference-title h1 {
-  font-size: 26px;
+  font-size: 21px;
   font-weight: 700;
-  margin: 0 0 12px 0;
-  line-height: 1.3;
+  margin: 0 0 10px 0;
+  line-height: 1.2;
   color: #0B1E38;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.conference-acronym {
+  font-size: 26px;
+  font-weight: 800;
+  color: #476E9E;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
 }
 
 .conference-info {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 45px;
+  gap: 16px;
   margin-bottom: 10px;
+  width: 100%;
 }
 
 .conference-info-details {
@@ -189,11 +218,12 @@
 }
 
 .info-sponsor-logo {
-  height: 110px;
-  width: auto;
+  height: 130px;
+  width: 130px;
   object-fit: contain;
   transition: transform 0.3s ease;
-  margin: 0 10px;
+  flex-shrink: 0;
+  margin-top: -30px;
 }
 
 .info-sponsor-logo:hover {
@@ -201,30 +231,50 @@
 }
 
 .info-sponsor-logo.ap-logo {
-  height: 140px; /* Increased size for AP logo */
+  height: 145px;
+  width: 145px;
+  margin-top: -35px;
 }
 
 .info-item {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 21px;
+  gap: 6px;
+  font-size: 17px;
+  color: #1A3B5C;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.info-text {
+  font-size: 17px;
+  font-weight: 600;
+  color: #E07B2A;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.info-text-date {
+  font-size: 17px;
+  font-weight: 600;
   color: #1A3B5C;
 }
 
 .info-icon {
-  font-size: 21px;
+  font-size: 17px;
   opacity: 0.9;
 }
 
 .sponsor-tag {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   background: rgba(71, 110, 158, 0.1);
   padding: 8px 20px;
   border-radius: 15px;
-  font-size: 15px;
+  font-size: 16px;
   color: #476E9E;
   border: 1px solid rgba(71, 110, 158, 0.3);
 }
@@ -265,7 +315,7 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 40px;
-  height: 65px;
+  height: 58px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -289,19 +339,19 @@
   color: #D5D0C8;
   text-decoration: none;
   font-weight: 500;
-  font-size: 16px;
-  padding: 12px 18px;
+  font-size: 14px;
+  padding: 10px 14px;
   border-radius: 8px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
 }
 
 .link-icon {
-  font-size: 22px;
+  font-size: 16px;
   color: #F5F0E8;
   display: flex;
   align-items: center;
@@ -460,7 +510,7 @@
   display: none;
   background: linear-gradient(135deg, #F5F0E8 0%, #FFFFFF 100%);
   width: 100%;
-  padding: 8px 0 0 0;
+  padding: 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   border-bottom: 3px solid #476E9E;
 }
@@ -470,7 +520,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 16px;
-  height: 60px;
+  height: 64px;
 }
 
 .mobile-logos {
@@ -1034,49 +1084,121 @@
 /* =================== RESPONSIVE DESIGN =================== */
 @media screen and (max-width: 1200px) {
   .conference-header-content {
-    padding: 0 30px;
-    gap: 30px;
+    padding: 0 20px;
+    gap: 12px;
+  }
+
+  .header-logo {
+    width: 130px;
   }
   
   .conference-title h1 {
-    font-size: 22px;
+    font-size: 17px;
+  }
+
+  .conference-badge {
+    font-size: 13px;
+    padding: 5px 16px;
   }
   
   .header-logo-img {
-    height: 90px;
+    height: 110px;
+    width: 130px;
+  }
+
+  .left-header-logo .header-logo-img {
+    height: 130px;
+    width: 130px;
+  }
+
+  .info-sponsor-logo {
+    height: 85px;
+    width: 85px;
+  }
+
+  .info-sponsor-logo.ap-logo {
+    height: 100px;
+    width: 100px;
+  }
+
+  .info-text, .info-text-date, .info-item {
+    font-size: 15px;
   }
   
   .nav-content {
-    padding: 0 30px;
+    padding: 0 24px;
+  }
+
+  .nav-link {
+    font-size: 13px;
+    padding: 9px 11px;
   }
 }
 
 @media screen and (max-width: 992px) {
   .conference-header-content {
-    gap: 20px;
-    padding: 0 20px;
+    gap: 10px;
+    padding: 0 14px;
+  }
+
+  .header-logo {
+    width: 100px;
   }
   
   .conference-title h1 {
-    font-size: 20px;
+    font-size: 14px;
+  }
+
+  .conference-badge {
+    font-size: 11px;
+    padding: 4px 12px;
   }
   
   .conference-info {
-    flex-direction: column;
     gap: 10px;
+  }
+
+  .info-item, .info-text, .info-text-date {
+    font-size: 13px;
   }
   
   .header-logo-img {
+    height: 90px;
+    width: 100px;
+  }
+
+  .left-header-logo .header-logo-img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .info-sponsor-logo {
+    height: 70px;
+    width: 70px;
+  }
+
+  .info-sponsor-logo.ap-logo {
     height: 80px;
+    width: 80px;
   }
   
   .nav-menu {
-    gap: 2px;
+    gap: 1px;
   }
   
   .nav-link {
-    padding: 12px 15px;
+    padding: 9px 10px;
+    font-size: 12px;
+    gap: 4px;
+  }
+
+  .link-icon {
     font-size: 14px;
+  }
+
+  .sponsor-tag {
+    font-size: 11px;
+    padding: 5px 12px;
   }
 }
 

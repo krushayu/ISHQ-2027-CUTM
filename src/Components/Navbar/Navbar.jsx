@@ -93,23 +93,22 @@ const Navbar = () => {
               {/* Conference Details */}
               <div className="conference-title">
                 <div className="conference-badge">
-                {/* 3<sup>rd</sup>  */}
-                International Conference<br/>on</div>
-                <h1>Sustainable, Intelligent Systems, Communication Hardware, and Quantum Technology (ISHQ)</h1>
+                  3<sup>rd</sup> International Conference<br/>on
+                </div>
+                <h1>Sustainable, Intelligent Systems, Communication Hardware, and Quantum Technology</h1>
+                <h2 className="conference-acronym">ISHQ - 2027</h2>
                 <div className="conference-info">
                   <img src="/assets/ISHQ _Hexagon_Logo.png" alt="ISHQ _Hexagon_Logo" className="info-sponsor-logo ap-logo" />
                   <div className="conference-info-details">
+                    <div className="info-item"><span className="info-text">Centurion University of Technology and Management, VZM, AndraPradesh</span></div>
                     <div className="info-item">
-                      <span className="info-text">📍 Centurion University of Technology and Management, Vizianagaram, AndraPradesh</span>
-                    </div>
-                    <div className="info-item">
-                      <span className="info-text">📅 10<sup>th</sup> - 12<sup>th</sup> August 2027</span>
+                      <span className="info-text-date">📅 10<sup>th</sup> - 12<sup>th</sup> August 2027</span>
                     </div>
                   </div>
                   <img src="/assets/APS_LOGO.svg" alt="APS_LOGO" className="info-sponsor-logo" />
                 </div>
                 <div className="sponsor-tag">
-                  <span className="tag-icon">⚡</span>
+                  {/* <span className="tag-icon"></span> */}
                   Technically co-sponsored by IEEE Vizag Bay Section & Antenna & Propagation Society
                 </div>
               </div>
@@ -120,6 +119,9 @@ const Navbar = () => {
               </div>
             </div>
           </div>
+
+          {/* Placeholder to prevent content jump when nav becomes fixed */}
+          <div className="nav-placeholder"></div>
 
           {/* Desktop Navigation */}
           <div className="nav-container">
@@ -210,7 +212,7 @@ const Navbar = () => {
                 </a>
               </div>
               <div className="mobile-conference-title">
-                <div className="mobile-badge">International Conference<br/>on</div>
+                <div className="mobile-badge">3rd International Conference<br/>on</div>
                 <div className="mobile-tagline">Sustainable, Intelligent Systems, Communication Hardware, and Quantum Technology (ISHQ)</div>
               </div>
               <div className="mobile-logo-item">
@@ -229,7 +231,6 @@ const Navbar = () => {
               {isOpen ? <FaTimes /> : <FaBars />}
             </button>
           </div>
-            <br></br>  
           <div className="mobile-bottom-bar">
             <div className="mobile-info-strip">
               <div className="mobile-info-item">

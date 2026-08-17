@@ -43,11 +43,11 @@ const Home = () => {
   const [deptImgIndex, setDeptImgIndex] = useState(0);
   const [scopesImgIndex, setScopesImgIndex] = useState(0);
 
-//   const aboutImages = [
-//     { src: "/assets/slide1.png", title: "CUTM Campus" },
-//     { src: "/assets/slide2.png", title: "University Area" },
-//     { src: "/assets/promod_udyan.jpg", title: "Pramod Udhyan" },
-//   ];
+  const aboutImages = [
+    { src: "/assets/slide4.jpg", title: "CUTM Campus" },
+    { src: "/assets/slide5.jpg", title: "CUTM Campus" },
+    { src: "/assets/slide4.jpg", title: "CUTM Campus" },
+  ];
 //   const deptImages = [
 //     { src: "/assets/ece1.png", title: "ECE" },
 //     { src: "/assets/ece2.png", title: "Department of ECE" },
@@ -138,8 +138,8 @@ const Home = () => {
   const conferenceInfo = [
     { icon: <FaCalendarAlt />, label: "Dates", value: <>10-12 August 2027</>, color: "#FF6B6B", link: "/imp-dates" },
     { icon: <FaMapMarkerAlt />, label: "Venue", value: "Centurion University of Technology and Management, Vizianagaram, AP", color: "#4ECDC4", link: "https://maps.app.goo.gl/cZAhNPGnfPCPvZSVA" },
-    { icon: <FaPaperPlane />, label: "Submissions", value: "Open Now", color: "#45B7D1", link: "/paper-submission" },
-    { icon: <FaAward />, label: "Publication", value: "Conference proceedings on IEEE Xplore", color: "#96CEB4", link: "/publication" },
+    { icon: <FaPaperPlane />, label: "Submit Paper", value: "Open Now", color: "#45B7D1", link: "/paper-submission" },
+    { icon: <FaAward />, label: "Publication", value: "IEEE Xplore", color: "#96CEB4", link: "/publication" },
     { icon: <MdAppRegistration />, label: "Mode", value: "Hybrid", color: "#DDA0DD", link: "/program-schedule" },
   ];
 
@@ -213,7 +213,7 @@ const Home = () => {
                 {/* <div className="slide-badge">{slide.tag}</div> */}
                 {/* <h1 className="slide-title">{slide.title}</h1> */}
                 <h2 className="slide-subtitle">{slide.subtitle}</h2>
-                <div className="slide-actions">
+                {/* <div className="slide-actions">
                   <button
                     className="secondary-btn"
                     onClick={() => window.open("/paper-submission", "_blank")}
@@ -221,7 +221,7 @@ const Home = () => {
                     <FaPaperPlane className="btn-icon" />
                     Submit Paper
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}
@@ -303,12 +303,12 @@ const Home = () => {
         <div className="conf-about-body">
           <div className="conf-vm-grid">
             <div className="conf-vm-card conf-vision">
-              <h3>Conference Vision</h3>  
+              <h3>Vision</h3>  
               <p>
                 ISHQ advances integrated research in sustainable engineering, intelligent systems, communication hardware, and quantum technology, connecting academia and industry to develop scalable, energy-efficient, and reliable solutions for measurable real-world impact.              </p>
             </div>
             <div className="conf-vm-card conf-mission">
-              <h3>Conference Mission</h3>
+              <h3>Mission</h3>
               <ul>
                 <li>Advance interdisciplinary research spanning sustainable engineering, intelligent systems, communication hardware, and quantum technology.</li>
                 <li>Build active industry-academia partnerships that convert research outcomes into deployable products and shared infrastructure.</li>
@@ -370,7 +370,7 @@ const Home = () => {
       )}
 
       {/* About University Section */}
-      {/* <section className="about-university-section anim-fade-up" ref={aboutRef}>
+       <section className="about-university-section anim-fade-up" ref={aboutRef}>
         <div className="section-header">
           <h2 className="section-title">Centurion University of Technology and Management</h2>
           <p className="section-subtitle">Accredited with 'A+' Grade by NAAC</p>
@@ -387,7 +387,7 @@ const Home = () => {
           <p>▪ Centurion University’s mission is to integrate skill, education, and enterprise to create meaningful livelihoods and social transformation. Through Gram Tarang Training & Employability Services (GTETS) - our social enterprise and the first NSDC partner - we have skilled over 850,000 youth from below-poverty-line and indigenous communities, including differently-abled individuals, helping them secure dignified employment and sustainable livelihoods.</p>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* About School of Engineering and Technology (SoET) */}
       {/* <section className="scopes-conference-section anim-fade-up" ref={scopesRef}>
@@ -574,13 +574,13 @@ const Home = () => {
                     <td>₹7,000</td><td>₹8,000</td><td>$200</td>
                   </tr>
                   <tr>
-                    <td>Listener</td>
-                    <td>₹2,000</td><td>₹2,500</td><td>$100</td>
+                    <td>Listener / Accompany Person</td>
+                    <td>₹2,000</td><td>₹2,000</td><td>$100</td>
                   </tr>
-                  <tr>
+                  {/* <tr>
                     <td>Accompany</td>
                     <td>₹1,000</td><td>₹1,000</td><td>$50</td>
-                  </tr>
+                  </tr> */}
                 </tbody>
               </table>
               <p className="fees-note">* Fee includes Conference Kit, Banquet, Lunch, Tea, and GST as applicable.</p>

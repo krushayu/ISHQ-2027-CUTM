@@ -37,7 +37,7 @@ const Accommodation = () => {
           <div className="ishq-accommodation-coming-soon-icon">
             <FaHotel />
           </div>
-          <h2>Accommodation Details Coming Soon</h2>
+          <h2>Accommodation Details Updating Soon..</h2>
           <p>
             We are currently finalizing the best accommodation options for our
             conference attendees. Please check back later for updated information

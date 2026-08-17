@@ -117,7 +117,7 @@ const Footer = () => {
                           <FaMapMarkerAlt />
                         </div>
                         <div className="contact-details">
-                          <h4>Address</h4>
+                          <h4>ISHQ -2027 Address</h4>
                           <p>
                             Centurion University of Technology and Management, AP
                             <br />

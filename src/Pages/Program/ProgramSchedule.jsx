@@ -8,13 +8,13 @@ const ProgramSchedule = () => {
 
   const scheduleData = {
     day1: [
-      { time: 'Coming Soon...', program: 'Coming Soon...', venue: 'Coming Soon...' }
+      { time: 'Updating Soon...', program: 'Updating Soon...', venue: 'Updating Soon...' }
     ],
     day2: [
-      { time: 'Coming Soon...', program: 'Coming Soon...', venue: 'Coming Soon...' }
+      { time: 'Updating Soon...', program: 'Updating Soon...', venue: 'Updating Soon...' }
     ],
     day3: [
-      { time: 'Coming Soon...', program: 'Coming Soon...', venue: 'Coming Soon...' }
+      { time: 'Updating Soon...', program: 'Updating Soon...', venue: 'Updating Soon...' }
     ]
   };
 
