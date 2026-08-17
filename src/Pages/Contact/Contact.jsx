@@ -33,7 +33,7 @@ const Contact = () => {
       <div className="ishq-contact-hero">
         <div className="ishq-contact-hero-content">
           <h1 className="ishq-contact-hero-title">ISHQ-Contact</h1>
-          <p className="ishq-contact-hero-subtitle">ISHQ-2027 Conference — Get in Touch</p>
+          {/* <p className="ishq-contact-hero-subtitle">ISHQ-2027 Conference — Get in Touch</p> */}
         </div>
         <div className="ishq-contact-hero-shapes">
           <div className="ishq-contact-shape ishq-contact-shape-1"></div>

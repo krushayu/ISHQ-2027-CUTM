@@ -22,7 +22,7 @@ const Accommodation = () => {
         <div className="ishq-accommodation-hero-content">
           <h1 className="ishq-accommodation-hero-title">ISHQ-Accommodation</h1>
           <p className="ishq-accommodation-hero-subtitle">
-            ISHQ-2027 Conference — Comfortable Stay Options
+            {/* ISHQ-2027 Conference — Comfortable Stay Options */}
           </p>
         </div>
         <div className="ishq-accommodation-hero-shapes">
