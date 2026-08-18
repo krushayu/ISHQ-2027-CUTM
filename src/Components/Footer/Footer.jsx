@@ -58,24 +58,20 @@ const Footer = () => {
                     </h3>
                     <ul className="footer-links">
                       <li>
-                        <a
-                          href="/doc/Brochure.pdf"
-                          target="_blank"
-                          rel="noopener noreferrer"
+                        <Link
+                          to="/coming-soon?item=Conference%20Brochure"
                           className="download-link"
                         >
                           Brochure
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/downloads/invitation.pdf"
-                          target="_blank"
-                          rel="noopener noreferrer"
+                        <Link
+                          to="/coming-soon?item=Invitation%20Letter"
                           className="download-link"
                         >
                           Invitation
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Sponsors.css";
 import {
   FaTrophy,
@@ -150,7 +151,12 @@ const Sponsors = () => {
       <div className="ishq-sponsor-info">
         <h3 className="ishq-sponsor-company-name">Dassault Systèmes</h3>
         <p className="ishq-sponsor-details">Details Adding soon...</p>
-        <button className="ishq-sponsor-visit-btn">Visit More..</button>
+        <Link
+          to="/coming-soon?item=Sponsor%20Details"
+          className="ishq-sponsor-visit-btn"
+        >
+          Visit More..
+        </Link>
       </div>
     </div>
   </div>

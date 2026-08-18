@@ -193,10 +193,10 @@ const Navbar = () => {
               
               {/* CTA Button */}
               <div className="nav-cta">
-                <button className="brochure-btn" onClick={() => window.location.href='/doc/Brochure.pdf'}>
+                <Link to="/coming-soon?item=Conference%20Brochure" className="brochure-btn">
                   <FaDownload className="btn-icon" />
                   <span>Brochure</span>
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -387,20 +387,21 @@ const Navbar = () => {
           </ul>
           
           <div className="mobile-cta-section">
-            <button 
+            <Link
+              to="/coming-soon?item=Conference%20Brochure"
               className="mobile-brochure-btn"
-              onClick={() => {setIsOpen(false); window.location.href='/doc/Brochure.pdf';}}
+              onClick={() => setIsOpen(false)}
             >
               <FaDownload className="mobile-btn-icon" />
               Download Conference Brochure
-            </button>
-            <a 
-              href="#paper submit" 
+            </Link>
+            <Link
+              to="/paper-submission"
               className="mobile-register-btn"
               onClick={() => setIsOpen(false)}
             >
               Submit Paper
-            </a>
+            </Link>
           </div>
           
           {/* <div className="mobile-footer">

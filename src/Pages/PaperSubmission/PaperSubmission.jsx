@@ -1,30 +1,14 @@
-  import React, { useState } from "react";
   import "./PaperSubmission.css";
   import {
     FaFileAlt,
     FaDownload,
     FaUpload,
     FaExclamationTriangle,
-    FaRocket,
-    FaCheckCircle,
+    FaTools,
   } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
   const PaperSubmission = () => {
-    const [btnState, setBtnState] = useState("idle");
-
-    const handleSubmit = () => {
-      if (btnState === "loading") return;
-      setBtnState("loading");
-      setTimeout(() => {
-        setBtnState("success");
-        setTimeout(() => {
-          window.open("#", "_blank");
-          setBtnState("idle");
-        }, 1000);
-      }, 2000);
-    };
-
     return (
       <div className="paper-wrapper">
         <div className="paper-hero">
@@ -125,12 +109,14 @@ import { Link } from "react-router-dom";
             {/* CMT Submit Card - IMPROVED DESIGN */}
             <div className="cmt-card">
               <div className="cmt-card-content">
-                <div className="cmt-badge">
+                <div className="cmt-badge cmt-badge--soon">
                   <span className="cmt-badge-dot"></span>
-                  Submission Open
+                  Opening Soon
                 </div>
 
-                <h3 className="cmt-card-heading">Ready to Submit Your Paper?</h3>
+                <h3 className="cmt-card-heading">
+                  Submission Portal Coming Soon
+                </h3>
 
                 <p
                   className="submit-card-text"
@@ -142,31 +128,14 @@ import { Link } from "react-router-dom";
                     fontFamily: "'Roboto Slab', serif",
                   }}
                 >
-                  Click the button below to open the Microsoft CMT submission
-                  portal for ISHQ 2027. Make sure your paper follows IEEE format
-                  before submitting.
+                  The Microsoft CMT submission portal for ISHQ 2027 is not open
+                  yet. The submission link will be activated on this page once
+                  the portal goes live. In the meantime, please prepare your
+                  manuscript using the IEEE templates above.
                 </p>
 
-                <button
-                  className={`cmt-btn cmt-btn--${btnState}`}
-                  onClick={handleSubmit}
-                  disabled={btnState === "loading"}
-                >
-                  {btnState === "idle" && (
-                    <>
-                      <FaRocket className="cmt-btn-icon" /> Submit via CMT
-                    </>
-                  )}
-                  {btnState === "loading" && (
-                    <>
-                      <span className="cmt-ring"></span> Launching...
-                    </>
-                  )}
-                  {btnState === "success" && (
-                    <>
-                      <FaCheckCircle className="cmt-btn-icon" /> Opening CMT!
-                    </>
-                  )}
+                <button className="cmt-btn cmt-btn--soon" disabled>
+                  <FaTools className="cmt-btn-icon" /> Submission Opens 30 Dec 2026
                 </button>
                 <br></br>
                 <p
@@ -203,12 +172,10 @@ import { Link } from "react-router-dom";
                     fontFamily: "'Roboto Slab', serif",
                   }}
                 >Scan to Submit</p>
-                  <div className="cmt-qr-frame">
-                    <img
-                      src="/assets/cmt_qr.png"
-                      alt="CMT QR Code"
-                      className="cmt-qr-img"
-                    />
+                  <div className="cmt-qr-frame cmt-qr-frame--placeholder">
+                    <FaTools className="cmt-qr-placeholder-icon" />
+                    <span className="cmt-qr-placeholder-text">QR Code</span>
+                    <span className="cmt-qr-placeholder-sub">Coming Soon</span>
                   </div>
                   <p
                   className="submit-card-text"

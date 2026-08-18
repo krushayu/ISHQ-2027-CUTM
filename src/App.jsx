@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 // import './mobile-responsive.css';
 import Navbar from './Components/Navbar/Navbar';
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 import Home from './Pages/Home/Home';
 import Footer from './Components/Footer/Footer';
 import ImpDates from './Pages/ImpDates/ImpDates';
@@ -15,13 +16,14 @@ import PaperSubmission from './Pages/PaperSubmission/PaperSubmission';
 import Sponsors from './Pages/Sponsors/Sponsors';
 import ProgramSchedule from './Pages/Program/ProgramSchedule';
 // import CallForPapers from './Pages/CallForPapers';
-// import Publication from './Pages/Publication';
+import ComingSoon from './Pages/ComingSoon/ComingSoon';
 import Registration from './Pages/Registration/Registraton';
 import NotFound from './Pages/NoFound/NotFound';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         <Navbar />
         <Routes>
@@ -36,7 +38,21 @@ function App() {
           <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/program-schedule" element={<ProgramSchedule />} />
           {/* <Route path="/call-for-papers" element={<CallForPapers />} /> */}
-          {/* <Route path="/publication" element={<Publication />} /> */}
+          <Route
+            path="/publication"
+            element={
+              <ComingSoon
+                title="Publication"
+                note="Publication details for ISHQ 2027 are not confirmed yet. Accepted
+                      and presented papers will be submitted for inclusion into IEEE
+                      Xplore, subject to meeting IEEE Xplore's scope and quality
+                      requirements. Full publication partner details, special issue
+                      information and indexing will be published on this page once
+                      finalised."
+              />
+            }
+          />
+          <Route path="/coming-soon" element={<ComingSoon />} />
           <Route path="/registration" element={<Registration />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
