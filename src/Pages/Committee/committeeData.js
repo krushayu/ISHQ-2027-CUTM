@@ -1,39 +1,3 @@
-/**
- * ISHQ 2027 — Organising committee roster.
- * ---------------------------------------------------------------
- * This is the ONLY file to edit when committee members change.
- * Committee.jsx renders it and needs no changes.
- *
- * SECTION SHAPE
- *   id      unique slug, lowercase-with-dashes (React key — keep unique)
- *   title   heading shown on the page
- *   color   accent for the heading, dot, avatars and count badge
- *   bg      chip background (always #F5F0E8)
- *   members array of strings — one per person
- *
- * MEMBER STRING FORMAT
- *   "Prefix Name, Designation, Institution, State"
- *                ^
- *                split happens at the FIRST comma:
- *                  before it -> bold name line
- *                  after it  -> grey designation line (commas kept as-is)
- *
- *   The prefix is stripped automatically, but ONLY these exact forms:
- *     "Prof. (Dr.) "   "Prof. Dr. "   "Prof. "   "Dr. "   "Mr. "   "Ms. "
- *   The trailing period is required — "Prof Bharati Mishra" (no period)
- *   renders with "Prof" still visible in the name.
- *
- *   A member with no comma renders as a name with no designation.
- *   "(Chair)" / "(Co-Chair)" may be appended, e.g.
- *     "Prof. (Dr.) Sukumar Mishra, Professor, IIT, Delhi, (Chair)"
- *
- * NOTES
- *   - The member count badge is calculated automatically — do not add one.
- *   - To add a section, copy any block, give it a NEW unique id, and use
- *     the next colour in the rotation: #A93122 -> #476E9E -> #1A3B5C
- *   - Order of sections here is the order shown on the page.
- */
-
 // Accent palette (rotate through these for new sections)
 export const COMMITTEE_COLORS = {
   habanero: "#A93122",
@@ -60,8 +24,18 @@ const committees = [
     color: "#476E9E",
     bg: "#F5F0E8",
     members: [
+      "Prof. (Dr.) Prasanta Kumar Mohanty, Vice-Chancellor, CUTM, AP",
+      "Prof (Dr.) Abraham Varughese, Director of NSTL, Visakhapatnam, AP",
+    ],
+  },
+  {
+    id: "co-patron",
+    title: "Co-Patrons",
+    color: "#476E9E",
+    bg: "#F5F0E8",
+    members: [
       "Prof. (Dr.) K.V. Ravi Kumar, Registrar, CUTM, AP",
-      "Prof. (Dr.) Pediredla Pallavi, Pro-Vice Chancellor, CUTM, AP"
+      "Prof. (Dr.) Pediredla Pallavi, Pro-Vice Chancellor, CUTM, AP",
     ],
   },
   {
@@ -69,28 +43,36 @@ const committees = [
     title: "Honorary General Chairs",
     color: "#1A3B5C",
     bg: "#F5F0E8",
-    members: [],
+    members: [
+      "Prof. (Dr.) G. S. N. Raju, Former Chancellor, CUTM, AP",
+      "Prof. (Dr.) Ganapati Panda, Former Deputy Director, IIT Bhubaneswar, Odisha",
+      "Prof. (Dr.) Okyay Kaynak, Istanbul, Turkey",
+    ],
   },
   {
     id: "general-chair",
     title: "General Chairs",
     color: "#A93122",
     bg: "#F5F0E8",
-     members: [],
+    members: ["Prof. (Dr.) Satish Rama Chowdary Paladuga"],
   },
   {
     id: "Conference-Chair",
     title: "Conference Chair",
     color: "#476E9E",
     bg: "#F5F0E8",
-     members: [],
+    members: [
+      "Dr. Debendra Kumar Sahoo, Assoc. Professor, Dept. of ECE, CUTM, Odisha",
+    ],
   },
   {
     id: "convener",
     title: "Convener",
     color: "#1A3B5C",
     bg: "#F5F0E8",
-    members: [],
+    members: [
+      "Dr P Anthony Sunny Dayal, Assoc.Professor, AP"
+    ],
   },
   {
     id: "co-convener",
@@ -104,98 +86,242 @@ const committees = [
     title: "IEEE Observer Committee",
     color: "#476E9E",
     bg: "#F5F0E8",
-      members: [],
+    members: [],
   },
   {
     id: "steering",
     title: "Steering Committee",
     color: "#1A3B5C",
     bg: "#F5F0E8",
-     members: [],
+    members: [
+      "Prof. Pallavi Pediredla, Registrar, CUTM AP Campus",
+      "Prof. Srinivas Rao, Dean Academic, School of Engineering and Technology",
+      "Prof. K. Vijay Babu, Dean, Research and Development",
+      "Prof. Raman Rao, Mechanical Engineering",
+      "Prof. MLN Acharyulu, Dean, Internal Quality Assurance Cell",
+      "Prof. K.V. Ravi Kumar, Dean, School of Forensic Science",
+      "Prof. Sri Veda, Associate Dean, School of Agriculture",
+      "Prof. R.S. Verma, Dean, Student Affairs",
+      "Prof. Anil J., Dean, IIC",
+      "Prof. K.V Kalyan Chekraverty, CUTM, AP ",
+      "Prof. R. Lakshaman Rao, Assistant Professor, CUTM, AP",
+    ],
   },
   {
     id: "organising",
     title: "Organising Committee",
     color: "#A93122",
     bg: "#F5F0E8",
-  members: [],
+    members: [
+      "Dr. Himansu Bhusan, Principal, School of Pharmaceutical Sciences, CUTM, AP",
+      "Prof. (Dr.) K.V. Ravi Kumar, Registrar, CUTM, AP",
+    ],
   },
   {
     id: "technical",
     title: "Technical Programme Committee",
     color: "#476E9E",
     bg: "#F5F0E8",
-     members: [],
+    members: [
+      "Prof. (Dr.) Sukumar Mishra, Professor, IIT, Delhi, (Chair)",
+      "Prof. (Dr.) Prasant Kumar Sahu, Professor, IIT, Bhubaneswar",
+      "Prof. (Dr.) K. Jogi Naidu, Associate Professor, CUTM, AP",
+      "Prof. (Dr.) Saroj Kumar Meher, Associate Professor, ISI, Bangalore",
+      "Prof. (Dr.) Nithin V. George, Associate Professor, IIT, Gandhi Nagar",
+      "Dr. Abinash Gaya, Associate Professor, SoET, CUTM, Odisha, (Co-Chair)",
+      "Prof. (Dr.) Gautam Mohanty, Associate Professor, NIT, Durgapur",
+      "Dr. Rajendra Kumar Khadanga, Associate Professor, SoET, CUTM, Odisha",
+      "Dr. Chandra Sekhar Dash, Associate Professor, SoET, CUTM, Odisha",
+      "Dr. Abinash Rath, Assistant Professor, SoET, CUTM, Odisha",
+      "Dr. Adyasha Rath, Assistant Professor, CV Raman Global University, Odisha",
+      "Dr. Prangya Paramita Pradhan, Assistant Professor, SoET, CUTM, Odisha",
+      "Dr. Nimay Chandra Giri, Assistant Professor, SoET, CUTM, Odisha",
+      "Dr. Debendra Muduli, Assistant Professor, CV Raman Global University, Odisha",
+      "Prof. Manoj Kumar Padhi, Assistant Professor, SoET, CUTM, Odisha",
+      "Prof. Susanta Kumar Nayak, Assistant Professor, SoET, CUTM, Odisha",
+      "Dr. Dukhishyam Sabat, Assistant Professor, SoET, CUTM, Odisha",
+      "Dr. Vikash Kumar Rathore, Assistant Professor, SoET, CUTM, Odisha",
+      "Dr. Aurobinda Bag, Assistant Professor, SoET, CUTM, Odisha",
+      "Dr. Sasmita Kumari Nayak, Associate Professor, CSE, SoET, CUTM, Odisha",
+      "Dr. Chinmayee Dora, Associate Professor, SoET, CUTM, Odisha",
+      "Dr. P Anthony Sunny Dayal, Associate Professor, SoET, CUTM, AP",
+      "Prof. Soumyadeep Maity, Assistant Professor, SoET, CUTM, Odisha",
+      "Dr. Satyabrata Lenka, Assistant Professor, CUTM, AP",
+      "Dr. D J M S N K Sri Veda, Associate Dean, SoAHS, CUTM, AP",
+      "Mr. Aasif Majeed Lone, Deputy Registrar, CUTM, AP",
+      "Dr, Satheesh Ampole, Associate Professor, HOD BS&H, CUTM, AP",
+      "MS. Sravani Mereddy, HOD Optometry, CUTM, AP",
+    ],
   },
   {
     id: "publication",
     title: "Publication Committee",
     color: "#1A3B5C",
     bg: "#F5F0E8",
-   members: [],
+    members: [
+      "Prof. (Dr.) Girish Kumar, Professor, IIT, Bombay, (Chair)",
+      "Prof. (Dr.) Sukumar Mishra, Professor, IIT, Delhi",
+      "Prof. (Dr.) Ramesh Chandra Mohanty, Professor, Dept. of Mechanical. Engg., CUTM, Odisha",
+      "Dr. Abhishek Das, Assistant Professor, SoET, CUTM, Odisha, (Co-Chair)",
+      "Dr. Ashish Ranjan Dash, Associate Professor, SoET, CUTM, Odisha",
+      "Dr. Ribhu Abhusan Panda, Assistant Professor, SoET, CUTM, Odisha",
+      "Prof (Dr.) Susanta Kumar Biswal, Professor, SoAS, CUTM, Odisha",
+      "Dr. Mohammed Siddique, Associate Professor, SoAS, CUTM, Odisha",
+      "Dr. K Vijaya Babu, Dean R & D, CUTM, AP",
+      "Dr, Mohanbabu, Associate Professor, CUTM, AP",
+    ],
   },
   {
     id: "international-advisory",
     title: "International Advisory Committee",
     color: "#A93122",
     bg: "#F5F0E8",
-    members: [],
+    members: [
+      "Prof. Patrice WIRA, University Institute of Technology of Mulhouse",
+      "Prof. Ahmed Zobaa, Brunel University London, GB",
+      "Prof. Huijun Gao, Harbin Institute of Technology, China",
+      "Dr. Celia Shahnaz, BUET, Bangladesh",
+      "Dr. Shazia Hasan, BITS Pilani, Dubai Campus",
+      "Dr. Milan Biswal, New Mexico State University, USA",
+      "Prof. Hyun Sung Shin, Samsung Electronics, Korea",
+      "Prof. Jin Young Park, Kyungpook National University, South Korea",
+      "Prof. Djaffar Ould Abdeslam, University of Haute-Alsace",
+      "Prof. Florian Misoc, Kennesaw State University, Marietta",
+      "Prof. Jan Michalik, University of West Bohemia",
+      "Prof. Matthew Armstrong, Newcastle University, UK",
+      "Prof. Andrews Samraj, Mahendra Engineering College, Malaysia",
+      "Prof. Ahmed Khader Habboush, Jerash University, Jordan",
+      "Prof. Gyoo-Soo Chae, Baekseok University, South Korea",
+      "Prof. Akhtar Kalam, Victoria University, Australia",
+      "Prof. Mohammad Alnabhan, Mu'tah University, Jordan",
+      "Prof. Ahmad Abu Alaish, Jerash University, Jordan",
+      "Prof. Majed Aburkaba, Tabuk University, KSA",
+      "Prof. Osama Alia, Tabuk University, KSA",
+      "Prof. Awad Awadelkarim, Tabuk University, KSA",
+      "Prof. Izzat Al-Smadi, Texas A&M University, USA",
+      "Prof. Raveendran Paramesran, Monash University, Malaysia",
+    ],
   },
   {
     id: "national-advisory",
     title: "National Advisory Committee",
     color: "#476E9E",
     bg: "#F5F0E8",
-     members: [],
+    members: [
+      "Prof. Radhakanta Padhi, IISC, Bangalore",
+      "Prof. Chandrashekhar Narayan Bhende, IIT, Bhubaneswar",
+      "Prof. Prasanta Kumar Mohanty, Vice-Chancellor, CUTM, AP",
+      "Prof. (Dr.) Ajay Kumar Nayak, Pro-Vice Chancellor, CUTM, Odisha",
+      "Prof. Biswajit Mishra, Pro-Vice Chancellor, CUTM, Odisha",
+      "Prof. Mihir N Mohanty, Siksha O Anusandhan University, India",
+      "Dr. Sukant Kishoro Bisoy, C. V. Raman Global University, Odisha",
+      "Prof. Khaleequr Rehman Niazi, Malaviya NIT, Jaipur",
+      "Prof. Atanu Maity, IIT Kharagpur",
+      "Prof. Aurobinda Routrai, IIT Kharagpur",
+      "Prof. Kamalkanta Mohapatra, NIT Rourkela",
+      "Prof. Sarat Kumar Patra, IIT Vadodara",
+      "Prof. Subhransu Ranjan Samantaray, IIT Bhubaneswar",
+      "Prof. Debiprasad Dogra, IIT Bhubaneswar",
+      "Prof. G. V. Mahesh, IISc, Bangalore",
+      "Prof. Bidyadhar Subudhi, IIT Goa",
+      "Prof. Badri Narayana Subudhi, IIT Jammu",
+      "Prof. RudraSankarDhar, NIT Mizoram",
+      "Prof. K. B. Mohanty, NIT Rourkela",
+      "Prof. Anup Kumar Panda, NIT Rourkela",
+      "Prof. Dayal Rama Krishna Parhi, NIT Rourkela",
+      "Prof. Bijayananda Patnaik, NIT Raipur",
+      "Prof. R. K. Saket, IIT (BHU), Varanasi",
+      "Prof. Pradeep Kumar Mallick, KIIT University",
+      "Prof. Prasant Kumar Pattnaik, KIIT University, Bhubaneswar",
+      "Prof. Ullash Kumar Rout, OUTR, India",
+      "Prof. Pradipta Kumar Nanda, Siksha O Anusandhan University",
+      "Prof. Rajesh Kumar Behera, BPUT, Odisha",
+      "Prof. Ajit Kumar Panda, NIST, India",
+      "Prof. Chhabi Rani Panigrahi, Rama Devi Women's University, Bhubaneswar",
+      "Prof. Dipti Prasad Mukherjee, ISI, India",
+      "Prof. Jyoti Prasad Patra, OUTR, India",
+      "Prof. Mrutyunjaya Panda, Utkal University",
+      "Prof. Durga Pasad Mohapatra, NIT Rourkela",
+      "Prof. Tripti Swarnakar, IIIT Raipur",
+      "Prof. Rakesh Chandra Balabantaray, IIIT, Odisha",
+      "Prof. Sanjay Saxena, IIIT, Odisha",
+      "Prof. Renu Sharma, SoA University, Odisha",
+      "Prof. Tanmoy Roy Choudhury, NIT Rourkela",
+      "Prof. Satyabrata Dash, GITAM University",
+      "Prof. Manoj Kumar Debnath, SoA University",
+      "Prof. Saneev Kumar Das, CUTM, Odisha",
+      "Prof. Sujit Bebortta, Ravenshaw University, Odisha",
+      "Prof. Manohar Mishra, SoA University, Odisha",
+      "Prof. Chinmoy Panigrahi, KIIT, Odisha",
+      "Prof. Harish Kumar Sahoo, VSSUT, Burla, Odisha",
+      "Prof. Puspanjali Mohapatra, IIIT, Bhubaneswar",
+      "Prof. Umamani Subudhi, IIIT, Bhubaneswar",
+      "Prof Bharati Mishra, IIIT, Bhubaneswar",
+      "Prof. Debashmita Pradhan, KIIT University",
+      "Prof. V. Ravikumar Pandi, Amrita Vishwa Vidyapeetham, Kollam",
+      "Prof. Suchismita Chinara, NIT Rourkela",
+    ],
   },
   {
     id: "finance",
     title: "Finance Committee",
     color: "#1A3B5C",
     bg: "#F5F0E8",
-    members: [],
+    members: [
+      "Mr. Debasis Panda, Comptroller of Finance, CUTM, Odisha",
+      "Mr. K Venkata Ramana, Accounts, CUTM, AP",
+      "Prof (Dr.) P.S.V. Ramana Rao, CUTM, AP",
+    ],
   },
   {
     id: "publicity",
     title: "Publicity / IT Committee",
     color: "#476E9E",
     bg: "#F5F0E8",
-    members: [],
+    members: [
+      "Prof. K.V Kalyan Chekraverty, CUTM, AP ",
+      "Dr. P Anthony Sunny Dayal, Associate Professor, SoET, CUTM, AP",
+    ],
   },
   {
     id: "track",
     title: "Track (Session & Event) Committee",
     color: "#A93122",
     bg: "#F5F0E8",
-    members: [],
+    members: [
+       "Prof. K. Vijay Babu, Dean, Research and Development",
+
+    ],
   },
   {
     id: "registration",
     title: "Registration Committee",
     color: "#476E9E",
     bg: "#F5F0E8",
-  members: [],
+    members: [],
   },
   {
     id: "souvenir",
     title: "Souvenir Committee",
     color: "#1A3B5C",
     bg: "#F5F0E8",
-    members: [],
+    members: [
+      "Prof. (Dr.) K. Jogi Naidu, Associate Professor, CUTM, AP"
+    ],
   },
   {
     id: "conference-kit",
     title: "Conference Kit / Certificates / Memento",
     color: "#A93122",
     bg: "#F5F0E8",
-      members: [],
+    members: [],
   },
   {
     id: "venue",
     title: "Venue & Stage Monitoring Committee",
     color: "#476E9E",
     bg: "#F5F0E8",
-   members: [],
+    members: [],
   },
   {
     id: "accommodation",
@@ -216,14 +342,14 @@ const committees = [
     title: "Cultural Committee",
     color: "#476E9E",
     bg: "#F5F0E8",
-   members: [],
+    members: [],
   },
   {
     id: "snacks",
     title: "Snacks & Beverage Committee",
     color: "#1A3B5C",
     bg: "#F5F0E8",
-     members: [],
+    members: [],
   },
   {
     id: "ambience",
@@ -251,7 +377,13 @@ const committees = [
     title: "Sponsorship Committee",
     color: "#A93122",
     bg: "#F5F0E8",
-    members: [],
+    members: [
+      "Prof. Prakash KVD, Dean HRD, CUTM, Odisha",
+      "Prof. (Dr.) Satya Prakash Nanda, Dean (Admin.), MSSSoA, CUTM, Odisha",
+      "Prof. Babu Sankar, MD, GT TECH",
+      "Prof. Mir Sadat Ali, Dean SoVET, CUTM, Odisha",
+      "Mr. Debasis Panda, Comptroller of Finance, CUTM, Odisha",
+    ],
   },
 ];
 

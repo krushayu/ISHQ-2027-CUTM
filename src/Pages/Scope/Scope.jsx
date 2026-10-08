@@ -250,7 +250,10 @@ const Scope = () => {
                 onClick={() => setActive(i)}
               >
                 <span className="scope-tab-icon">{track.icon}</span>
-                <span className="scope-tab-label">{track.title}</span>
+                <div className="scope-tab-text">
+                  <span className="scope-tab-track-no">Track {i + 1}</span>
+                  <span className="scope-tab-label">{track.title}</span>
+                </div>
               </button>
             ))}
           </div>
@@ -259,7 +262,10 @@ const Scope = () => {
           <div className="scope-panel" style={{ "--c": tracks[active].color }}>
             <div className="scope-panel-header">
               <div className="scope-panel-icon">{tracks[active].icon}</div>
-              <h2>{tracks[active].title}</h2>
+              <div className="scope-panel-title-container">
+                <span className="scope-panel-track-badge">Track {active + 1}</span>
+                <h2>{tracks[active].title}</h2>
+              </div>
             </div>
 
             {/* Topics and SDGs Side by Side */}

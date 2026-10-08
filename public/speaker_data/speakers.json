@@ -8,8 +8,36 @@
     "abstract": "Exploring the convergence of IoT and embedded systems, discussing challenges and opportunities in the era of Industry 4.0.",
     "image": "/speaker_data/speakers/ganpati_panda.jpg"
   },
+  
   {
     "id": 2,
+    "name": "Dr. Binay Kumar Das",
+    "profession": "Distinguished Scientist and Director General, Electronics & Communication Systems (ECS) Cluster, Defence Research and Development Organisation (DRDO), Ministry of Defence, Government of India",
+    "about": "Dr. Binay Kumar Das is a Distinguished Scientist and serves as the Director General of the Electronics & Communication Systems (ECS) cluster at the Defence Research and Development Organisation (DRDO), Ministry of Defence, Government of India.",
+    "talkTitle": "Coming soon....",
+    "abstract": "Coming soon....",
+    "image": "/speaker_data/speakers/binay_kumar_das.png"
+  },
+  {
+    "id": 3,
+    "name": "L Venkata Subramaniam",
+    "profession": "CEO, Qbit Force",
+    "about": "L Venkata Subramaniam is the Chief Executive Officer (CEO) at Qbit Force.",
+    "talkTitle": "Coming soon....",
+    "abstract": "Coming soon....",
+    "image": "/speaker_data/speakers/l_venkata_subramaniam.png"
+  },
+  {
+    "id": 4,
+    "name": "Mr. Manas Panda",
+    "profession": "Scientist 'G' and Jurisdictional Director, STPI Bhubaneswar, Ministry of Electronics & Information Technology (MeitY), Government of India",
+    "about": "Mr. Manas Panda is a Scientist 'G' and Jurisdictional Director at the Software Technology Parks of India (STPI), Bhubaneswar, under the Ministry of Electronics & Information Technology (MeitY), Government of India.",
+    "talkTitle": "Coming soon....",
+    "abstract": "Coming soon....",
+    "image": "/speaker_data/speakers/manas_panda.png"
+  },
+  {
+    "id": 5,
     "name": "Dr. Raffaele Scuderi",
     "profession": "Electromagnetics Industry Process Consultant and SIMULIA EMAG Specialist",
     "about": "Raffaele Scuderi received his master's degree (summa cum laude) in Telecommunication Engineering from the University of Pisa, Italy, in 2010. He joined the Microwave and Radiation Laboratory of the University of Pisa as a Ph.D. student and later worked with IDS – Ingegneria Dei Sistemi and Dassault Systèmes. His expertise includes electromagnetic simulation, EMC problems, radiation and scattering analysis, consulting services, and R&D.",
@@ -18,40 +46,13 @@
     "image": "/speaker_data/speakers/Raffaele.jpg"
   },
   {
-    "id": 3,
-    "name": "Prof. Gautam Kumar Mahanti",
-    "profession": "Professor, Department of Electronics and Communication Engineering, National Institute of Technology Durgapur",
-    "about": "Coming soon....",
-    "talkTitle": "Coming soon....",
-    "abstract": "Coming soon....",
-    "image": "/speaker_data/speakers/gautam_kumar_mahanti.png"
-  },
-  {
-    "id": 4,
+    "id": 6,
     "name": "Prof. Sarat Kumar Patra",
     "profession": "Professor and Director, National Institute of Technology Agartala",
     "about": "Coming soon....",
     "talkTitle": "Coming soon....",
     "abstract": "Coming soon....",
     "image": "/speaker_data/speakers/sarat_kumar_patra.png"
-  },
-  {
-    "id": 5,
-    "name": "Prof. Bishnu Prasad Das",
-    "profession": "Professor, Indian Institute of Technology Roorkee",
-    "about": "Coming soon....",
-    "talkTitle": "Coming soon....",
-    "abstract": "Coming soon....",
-    "image": "/speaker_data/speakers/bishnu_prasad_das.png"
-  },
-  {
-    "id": 6,
-    "name": "Prof. Anirban Sengupta",
-    "profession": "Professor, Indian Institute of Technology Indore",
-    "about": "Coming soon....",
-    "talkTitle": "Coming soon....",
-    "abstract": "Coming soon....",
-    "image": "/speaker_data/speakers/anirban_sengupta.png"
   },
   {
     "id": 7,

@@ -106,7 +106,7 @@ const Home = () => {
     {
       image: "/assets/slide4.jpg",
       overlay: "rgba(0,0,0,0.3)",
-    //   title: <>3<sup>rd</sup> International Conference</>,
+    //   title: <>1<sup>st</sup> International Conference</>,
       subtitle: "Sustainable, Intelligent Systems, Communication Hardware, and Quantum Technology",
     //   tag: "IEEE Technically Co-Sponsored",
     },
@@ -139,7 +139,7 @@ const Home = () => {
     { icon: <FaCalendarAlt />, label: "Dates", value: <>10-12 August 2027</>, color: "#FF6B6B", link: "/imp-dates" },
     { icon: <FaMapMarkerAlt />, label: "Venue", value: "Centurion University of Technology and Management, Vizianagaram, AP", color: "#4ECDC4", link: "https://maps.app.goo.gl/cZAhNPGnfPCPvZSVA" },
     { icon: <FaPaperPlane />, label: "Submit Paper", value: "Open Now", color: "#45B7D1", link: "/paper-submission" },
-    { icon: <FaAward />, label: "Publication", value: "IEEE Xplore", color: "#96CEB4", link: "/publication" },
+    // { icon: <FaAward />, label: "Publication", value: "IEEE Xplore", color: "#96CEB4", link: "/publication" },
     { icon: <MdAppRegistration />, label: "Mode", value: "Hybrid", color: "#DDA0DD", link: "/program-schedule" },
   ];
 
@@ -155,8 +155,8 @@ const Home = () => {
   const importantDates = [
     { title: "Paper Submission open",   date: "30 December 2026",         start: new Date('2026-12-30'), end: new Date('2027-04-30') },
     { title: "Last date of Paper Submission ",  date: "30 April 2027",      start: new Date('2027-04-30'), end: new Date('2027-04-30') },
-    { title: "Notification of Acceptance", date: "30 May 2027",  start: new Date('2027-05-30'), end: new Date('2027-05-30') },
-    { title: "Reg. & Camera ready start", date: "01 June 2027", start: new Date('2027-06-01'), end: new Date('2027-06-30') },
+    { title: "Notification of Acceptance", date: "01 June 2027",  start: new Date('2027-06-01'), end: new Date('2027-06-15') },
+    { title: "Reg. & Camera ready start", date: "15 June 2027", start: new Date('2027-06-15'), end: new Date('2027-06-30') },
     { title: "Reg. & Camera ready deadline ",  date: "30 June 2027",      start: new Date('2027-06-30'), end: new Date('2027-06-30') },
     { title: "Conference Dates",        date: "10-12 August 2027", start: new Date('2027-08-10  '), end: new Date('2027-08-12') },
   ].map((d) => {
@@ -373,7 +373,7 @@ const Home = () => {
        <section className="about-university-section anim-fade-up" ref={aboutRef}>
         <div className="section-header">
           <h2 className="section-title">Centurion University of Technology and Management</h2>
-          <p className="section-subtitle">Accredited with 'A+' Grade by NAAC</p>
+          {/* <p className="section-subtitle">Accredited with 'A+' Grade by NAAC</p> */}
         </div>
         <div className="about-content">
           <div className="about-image-slider anim-slide-left">
@@ -381,7 +381,7 @@ const Home = () => {
             <div className="scopes-img-title">{aboutImages[aboutImgIndex].title}</div>
           </div>
           <div className="about-text anim-slide-right">
-          <p>▪ Centurion University of Technology & Management (CUTM) is a State-notified Skill University, accredited A+ by NAAC, the only Skill University in India to hold this distinction. Recognised as a “Centre of Excellence” by the Ministry of Skill Development & Entrepreneurship (MoSDE), Government of India, Centurion is also approved by DGCA as a Drone Pilot Training Institute and has been accorded Section-1 University status by the Department of Education and Training, Government of Australia. The Outlook, in its rankings for 2024 and 2025, ranked Centurion University as the No.1 Skill University in India and among the Top-10 Private State Universities nationally, two years consecutively.<a href="https://cutm.ac.in/" target="_blank" rel="noopener noreferrer" className="cutm-inline-link">Visit cutm.ac.in →</a></p>
+          <p>▪ Centurion University of Technology & Management (CUTM) is a State-notified Skill University, the only Skill University in India to hold this distinction. Recognised as a “Centre of Excellence” by the Ministry of Skill Development & Entrepreneurship (MoSDE), Government of India, Centurion is also approved by DGCA as a Drone Pilot Training Institute and has been accorded Section-1 University status by the Department of Education and Training, Government of Australia. The Outlook, in its rankings for 2024 and 2025, ranked Centurion University as the No.1 Skill University in India and among the Top-10 Private State Universities nationally, two years consecutively.<a href="https://cutm.ac.in/" target="_blank" rel="noopener noreferrer" className="cutm-inline-link">Visit cutm.ac.in →</a></p>
           <p>▪ The University has received national and international recognition for its pioneering model of integrating skill development into higher education, which earned the University citations by name in the United Nations General Assembly debate in education, UNESCO, the World Bank, NITI Aayog, and the British Council, among others, affirming its role as a model institution for inclusive, impactful, and transformative education.</p>
           <p>▪ Centurion University has also been awarded the “Green Gown Award International 2025 – Highly Commendable Nature Positive” by the Environmental Association for Universities and Colleges (EAUC) in partnership with the International Association of Universities and the UN Environmental Program, thus confirming the commitment towards ecological sustainability.</p>
           <p>▪ Centurion University’s mission is to integrate skill, education, and enterprise to create meaningful livelihoods and social transformation. Through Gram Tarang Training & Employability Services (GTETS) - our social enterprise and the first NSDC partner - we have skilled over 850,000 youth from below-poverty-line and indigenous communities, including differently-abled individuals, helping them secure dignified employment and sustainable livelihoods.</p>
@@ -590,9 +590,9 @@ const Home = () => {
       </section>
 
       {/* Copyright Stamp */}
-      <div className="copyright-stamp">
+      {/* <div className="copyright-stamp">
         <img src="/assets/ISHQ_SEAL.png" alt="ISHQ Copyright Seal" />
-      </div>
+      </div> */}
     </div>
   );
 };

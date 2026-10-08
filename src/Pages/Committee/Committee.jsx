@@ -44,7 +44,7 @@ const Committee = () => {
           const formatName = (fullName) => {
             // Remove prefixes like Prof. (Dr.), Dr., Mr., Ms., etc.
             const cleanName = fullName
-              .replace(/^(Prof\.\s*\(Dr\.\)|Prof\.\s*Dr\.|Prof\.|Dr\.|Mr\.|Ms\.)\s*/i, "")
+              // .replace(/^(Prof\.\s*\(Dr\.\)|Prof\.\s*Dr\.|Prof\.|Dr\.|Mr\.|Ms\.)\s*/i, "")
               .trim();
             
             // If there's a comma, split name and designation

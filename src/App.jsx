@@ -38,20 +38,6 @@ function App() {
           <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/program-schedule" element={<ProgramSchedule />} />
           {/* <Route path="/call-for-papers" element={<CallForPapers />} /> */}
-          <Route
-            path="/publication"
-            element={
-              <ComingSoon
-                title="Publication"
-                note="Publication details for ISHQ 2027 are not confirmed yet. Accepted
-                      and presented papers will be submitted for inclusion into IEEE
-                      Xplore, subject to meeting IEEE Xplore's scope and quality
-                      requirements. Full publication partner details, special issue
-                      information and indexing will be published on this page once
-                      finalised."
-              />
-            }
-          />
           <Route path="/coming-soon" element={<ComingSoon />} />
           <Route path="/registration" element={<Registration />} />
           <Route path="*" element={<NotFound />} />

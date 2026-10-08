@@ -69,7 +69,7 @@ const Navbar = () => {
   const callForPapersItems = [
     { label: 'Scope of the Conference', href: '/scope', icon: <FaFlask />, isRoute: true },
     { label: 'Important Dates', href: '/imp-dates', icon: <FaClock />, isRoute: true },
-    { label: 'Publication', href: '/publication', icon: <MdPublish />, isRoute: true },
+    // { label: 'Publication', href: '/publication', icon: <MdPublish />, isRoute: true },
     { label: 'Paper Submission', href: '/paper-submission', icon: <FaFileAlt />, isRoute: true },
     { label: 'Program Schedule', href: '/program-schedule', icon: <FaCalendarAlt />, isRoute: true },
     { label: 'Place of Visit', href: '/places', icon: <FaMapMarkerAlt />, isRoute: true },
@@ -93,7 +93,7 @@ const Navbar = () => {
               {/* Conference Details */}
               <div className="conference-title">
                 <div className="conference-badge">
-                  3<sup>rd</sup> International Conference<br/>on
+                1<sup>st</sup> International Conference<br/>on
                 </div>
                 <h1>Sustainable, Intelligent Systems, Communication Hardware, and Quantum Technology</h1>
                 <h2 className="conference-acronym">ISHQ - 2027</h2>
