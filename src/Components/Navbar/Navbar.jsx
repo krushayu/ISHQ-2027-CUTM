@@ -212,7 +212,7 @@ const Navbar = () => {
                 </a>
               </div>
               <div className="mobile-conference-title">
-                <div className="mobile-badge">3rd International Conference<br/>on</div>
+                <div className="mobile-badge">1st International Conference<br/>on</div>
                 <div className="mobile-tagline">Sustainable, Intelligent Systems, Communication Hardware, and Quantum Technology (ISHQ)</div>
               </div>
               <div className="mobile-logo-item">
@@ -280,7 +280,7 @@ const Navbar = () => {
         
         <div className="mobile-menu-content">
           <div className="mobile-conference-info">
-            <h3>International Conference<br/>on</h3>
+            <h3>1st International Conference<br/>on</h3>
             <p>Sustainable, Intelligent Systems, Communication Hardware, and Quantum Technology (ISHQ)</p>
             <div className="mobile-date">
               <span className="date-icon">📅</span>

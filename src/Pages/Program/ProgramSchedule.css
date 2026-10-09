@@ -228,8 +228,8 @@
 }
 
 /* Coming Soon State */
-.schedule-table tbody tr td.schedule-time:contains("Coming Soon") {
-  color: #D5D0C8;
+.schedule-table tbody tr td.schedule-time {
+  color: #476E9E;
 }
 
 /* ===== PRESENTATION SECTION (Commented but ready) ===== */
