@@ -42,10 +42,7 @@ const Committee = () => {
         {committees.map((c) => {
           // Extract name without prefix and designation
           const formatName = (fullName) => {
-            // Remove prefixes like Prof. (Dr.), Dr., Mr., Ms., etc.
-            const cleanName = fullName
-              // .replace(/^(Prof\.\s*\(Dr\.\)|Prof\.\s*Dr\.|Prof\.|Dr\.|Mr\.|Ms\.)\s*/i, "")
-              .trim();
+            const cleanName = fullName.trim();
             
             // If there's a comma, split name and designation
             const commaIndex = cleanName.indexOf(",");
@@ -55,9 +52,9 @@ const Committee = () => {
               return { name, desig };
             }
             
-            // Check for parentheses pattern like "(Chair)" or "(Co-Chair)"
+            // Check for parentheses pattern like "(Chair)" or "(Co-Chair)" (excluding degrees like Dr.)
             const parenMatch = cleanName.match(/\(([^)]+)\)/);
-            if (parenMatch) {
+            if (parenMatch && !/^(dr\.?|dr|ph\.?d\.?)$/i.test(parenMatch[1].trim())) {
               const name = cleanName.replace(/\s*\([^)]+\)/, "").trim();
               const desig = parenMatch[1];
               return { name, desig: `(${desig})` };
@@ -67,9 +64,12 @@ const Committee = () => {
           };
 
           const getInitial = (name) => {
-            // Get first letter of first word
-            const words = name.split(" ");
-            return words[0]?.charAt(0).toUpperCase() || "?";
+            // Get first letter of actual name (skipping prefixes like Prof., Dr., Mr., etc.)
+            const clean = name
+              .replace(/^(Prof\.\s*\(Dr\.\)|Prof\.\s*\(Dr\)|Prof\.\s*Dr\.|Prof\.|Dr\.|Mr\.|Ms\.|Mrs\.)\s*/i, "")
+              .trim();
+            const words = clean.split(/\s+/);
+            return words[0]?.charAt(0).toUpperCase() || name.charAt(0).toUpperCase() || "?";
           };
 
           return (
